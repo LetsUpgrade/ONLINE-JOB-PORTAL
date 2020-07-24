@@ -3,7 +3,7 @@
 ### **PROJECT ID: 04**
 >## **Project Mentors:**
 * **Supriya Sinha, Kamal Sharma**
-
+* **S Sai Bighnesh Prusty, Snigdha Anjali**
 >## ✍&nbsp; PROJECT DESCRIPTION
 The objective of the project is to create an interactive job vacancy portal for candidates and enable jobseekers to place their resumes and find appropriate jobs while companies to publish their vacancies and find good candidates.
  It will provide various companies to place their vacancy profile on the site and also have an option to search candidate resumes.
