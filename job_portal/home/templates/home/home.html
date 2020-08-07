@@ -3,7 +3,7 @@
 <head>
   <title>Online Job Portal</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -18,13 +18,18 @@
   .material-icons.teal600 { color: teal; }
   
   </style>
-
+    <script>
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+  </script>
 </head>
 <body>
 <!-- Nav Bar Starts Here-->
  <nav>
     <div class="nav-wrapper teal">
       <a href="#" class="brand-logo" style="margin-left:30px">Job Portal</a>
+       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#">Home</a></li>
         <li><a href="#">Find a job</a></li>
@@ -47,15 +52,18 @@
                     <div class="container">
                     <form class="col s12">
                         <div class="row">
-                            <div class="input-field col s8">
+                            <div class="input-field col s12 l6">
                                 <i class="material-icons prefix">search</i>
                                 <input id="icon_search" type="text" class="validate">
                                 <label for="icon_search">Designation, Skills, etc.</label>
                             </div>
-                            <div class="input-field col s4">
+                            <div class="input-field col s12 l4">
                                 <i class="material-icons prefix">location_on</i>
                                 <input id="icon_location" type="text" class="validate">
                                 <label for="icon_location">Location</label>
+                            </div>
+                            <div class="btn input-field col s12 l2" >
+                            Search
                             </div>
                         </div>
                     </form>
@@ -69,8 +77,8 @@
 
 <!-- Page Layout here -->
 <div class="container">
-    <div class="row">
-        <div class="col s12 m4 l3">
+    <div class="row ">
+        <div class="col s12 m3 l3">
         <!-- Left  navigation panel -->
             <h2 style="font-family: 'Quicksand', sans-serif;">News</h2>
             <div class="divider"></div>
@@ -88,9 +96,14 @@
                 <h5 style="font-family: 'Abel', sans-serif;">Section 3</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
+            <div class="section right-align">
+            <a href="#"> View all </a>
+
+            </div>
+            
       </div>
 
-    <div class="col s12 m4 l9">
+    <div class="col s12 m9 l9">
         <!-- Right Navigation Panel  -->
         <h2 style="font-family: 'Quicksand', sans-serif;">Explore</h2>
 
@@ -99,7 +112,7 @@
         <div class="section">
             <h5 style="font-family: 'Abel', sans-serif;">Recent Jobs</h5>
             <div class="row">
-                <div class="col s4">
+                <div class="col s12 m4">
                     <div class="card small" style="height:auto; padding:20px;">
                     <!-- Card Content -->
                         <p> Company:</p>
@@ -108,7 +121,7 @@
                     </div>
                 </div>
       
-                <div class="col s4">
+                <div class="col s12 m4">
                     <div class="card small" style="height:auto; padding:20px;">
                     <!-- Card Content -->
                         <p> Company:</p>
@@ -117,7 +130,7 @@
                     </div>
                 </div>
                              
-                <div class="col s4">
+                <div class="col s12 m4">
                     <div class="card small" style="height:auto; padding:20px;">
                     <!-- Card Content -->
                         <p> Company:</p>
@@ -132,7 +145,7 @@
         <div class="section">
             <h5 style="font-family: 'Abel', sans-serif;">Work From Home Jobs</h5>
             <div class="row">
-                <div class="col s4">
+                <div class="col s12 m4">
                     <div class="card small" style="height:auto; padding:20px;">
                     <!-- Card Content -->
                         <p> Company:</p>
@@ -141,7 +154,7 @@
                     </div>
                 </div>
       
-                <div class="col s4">
+                <div class="col s12 m4">
                     <div class="card small" style="height:auto; padding:20px;">
                     <!-- Card Content -->
                         <p> Company:</p>
@@ -150,7 +163,7 @@
                     </div>
                 </div>
                              
-                <div class="col s4">
+                <div class="col s12 m4">
                     <div class="card small" style="height:auto; padding:20px;">
                     <!-- Card Content -->
                         <p> Company:</p>
@@ -166,7 +179,7 @@
         <div class="section">
             <h5 style="font-family: 'Abel', sans-serif;">Walk-in Jobs</h5>
             <div class="row">
-                <div class="col s4">
+                <div class="col s12 m4">
                     <div class="card small" style="height:auto; padding:20px;">
                     <!-- Card Content -->
                         <p> Company:</p>
@@ -175,7 +188,7 @@
                     </div>
                 </div>
       
-                <div class="col s4">
+                <div class="col s12 m4">
                     <div class="card small" style="height:auto; padding:20px;">
                     <!-- Card Content -->
                         <p> Company:</p>
@@ -184,7 +197,7 @@
                     </div>
                 </div>
                              
-                <div class="col s4">
+                <div class="col s12 m4">
                     <div class="card small" style="height:auto; padding:20px;">
                     <!-- Card Content -->
                         <p> Company:</p>
@@ -202,19 +215,19 @@
 <div class="row center-align">
     <h4> Testimonials </h4> 
     <br>
-      <div class="col s4">
+      <div class="col s12 m4 l4">
        <i class="material-icons prefix md-48">verified</i>
        <h4>Speeds up development</h4>
        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  </p>
         <!-- Promo Content 1 goes here -->
       </div>
-      <div class="col s4">
+      <div class="col s12 m4 l4">
        <i class="material-icons prefix md-48">verified</i>
        <h4>User Experience Focused</h4>
        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  </p>
         <!-- Promo Content 2 goes here -->
       </div>
-      <div class="col s4">
+      <div class="col s12 m4 l4">
        <i class="material-icons prefix md-48">verified</i>
        <h4> Easy to work with us</h4>
        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
@@ -227,14 +240,14 @@
 <!-- Updates-->
 
 <div class="container center-align" >
-    <h3>Stay Updated ! </h3>
+    <h3>Stay Updated! </h3>
     Enter your Email Id to keep yourself updated with the new job openings.
     <div class="row">
-        <form class="col s12">
+        <form class="col s12 m12 l12">
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix teal600">email</i>
-                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+               <input type="email" class="validate">
                 <span class="btn">Subscribe</span>
                 <label >Email ID</label>
             </div>
@@ -248,7 +261,7 @@
 <!--Footer starts here-->
 <div class="page-footer teal center-align">
     <div class="row">
-     <div class="col s3">
+     <div class="col s12 l3 ">
             <h5 class="white-text">Information</h5>
             <ul>
                 <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
@@ -258,7 +271,7 @@
             </ul>
         </div>
 
-        <div class="col s3">
+        <div class="col s12 l3">
             <h5 class="white-text">Job Seekers</h5>
             <ul>
                 <li><a class="grey-text text-lighten-3" href="#!">Jobs Search</a></li>
@@ -268,7 +281,7 @@
             </ul>
       </div>
     
-        <div class="col s3">
+        <div class="col s12 l3">
             <h5 class="white-text">Employeers</h5>
             <ul>
                 <li><a class="grey-text text-lighten-3" href="#!">Employeer Login</a></li>
@@ -278,7 +291,7 @@
             </ul>
         </div>
 
-        <div class="col s3">
+        <div class="col s12 l3">
             <h5 class="white-text">Stay Connected</h5>
             <ul>
                 <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
