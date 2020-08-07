@@ -1,235 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Online Job Portal</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
   .material-icons.white600 { color: white; }
+  .material-icons.md-48 { font-size: 48px; }
+  .material-icons.teal600 { color: teal; }
+  
   </style>
+
 </head>
 <body>
 <!-- Nav Bar Starts Here-->
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">JOB PORTAL</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-    <!--Home-->
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-    <!-- Find Jobs-->
-      <li class="nav-item">
-        <a class="nav-link" href="#">Find a Jobs</a>
-      </li>
-    <!--Company Review -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">Company Review </a>
-      </li>
-    <!-- Work From Home-->
-      <li class="nav-item">
-        <a class="nav-link" href="#">Work From Home </a>
-      </li>
-    <!-- Blogs-->
-      <li class="nav-item">
-        <a class="nav-link" href="#">Blogs </a>
-      </li>
-    
-    <!-- More (DropDown)-->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          More
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    
-    </ul>
-
-    <ul class="navbar-nav mr-3">
-    <!--Login-->
-      <li class="nav-item">
-        <a class="nav-link" href="#">Login </a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class=" form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-     <i class="material-icons white600 ">search</i>
-    </form>
-  </div>
+ <nav>
+    <div class="nav-wrapper teal">
+      <a href="#" class="brand-logo" style="margin-left:30px">Job Portal</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Find a job</a></li>
+        <li><a href="#">Company Review</a></li>
+        <li><a href="#">Work From Home</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </div>
 </nav>
 <!-- Nav Bar Ends Here-->
 
+<!-- Search Bar starts-->
+<div class="col s12 ">
+    <h4 class="header center-align " style="font-family: 'Quicksand', sans-serif;">Find Genuine Jobs</h4>
+    <div class="card horizontal">
+        <div class="card-stacked">
+            <div class="card-content">
+                <div class="row">
+                    <div class="container">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s8">
+                                <i class="material-icons prefix">search</i>
+                                <input id="icon_search" type="text" class="validate">
+                                <label for="icon_search">Designation, Skills, etc.</label>
+                            </div>
+                            <div class="input-field col s4">
+                                <i class="material-icons prefix">location_on</i>
+                                <input id="icon_location" type="text" class="validate">
+                                <label for="icon_location">Location</label>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Serach Bar ends-->
 
-<!-- Contents part 1 starts here-->
+<!-- Page Layout here -->
 <div class="container">
-  <h3>Navbar Forms</h3>
-  <p>Use the .navbar-form class to vertically align form elements (same padding as links) inside the navbar.</p>
-  <p>The .input-group class is a container to enhance an input by adding an icon, text or a button in front or behind it as a "help text".</p>
-  <p>The .input-group-btn class attaches a button next to an input field. This is often used as a search bar:</p>
+    <div class="row">
+        <div class="col s12 m4 l3">
+        <!-- Left  navigation panel -->
+            <h2 style="font-family: 'Quicksand', sans-serif;">News</h2>
+            <div class="divider"></div>
+            <div class="section">
+                <h5 style="font-family: 'Abel', sans-serif;">Section 1</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="divider"></div>
+            <div class="section">
+                <h5 style="font-family: 'Abel', sans-serif;">Section 2</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="divider"></div>
+            <div class="section">
+                <h5 style="font-family: 'Abel', sans-serif;">Section 3</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+      </div>
+
+    <div class="col s12 m4 l9">
+        <!-- Right Navigation Panel  -->
+        <h2 style="font-family: 'Quicksand', sans-serif;">Explore</h2>
+
+        <!-- Recent Jobs section-->
+        <div class="divider"></div>
+        <div class="section">
+            <h5 style="font-family: 'Abel', sans-serif;">Recent Jobs</h5>
+            <div class="row">
+                <div class="col s4">
+                    <div class="card small" style="height:auto; padding:20px;">
+                    <!-- Card Content -->
+                        <p> Company:</p>
+                        <p>Experience:</p>
+                        <p>Location: </p>
+                    </div>
+                </div>
+      
+                <div class="col s4">
+                    <div class="card small" style="height:auto; padding:20px;">
+                    <!-- Card Content -->
+                        <p> Company:</p>
+                        <p>Experience:</p>
+                        <p>Location: </p>
+                    </div>
+                </div>
+                             
+                <div class="col s4">
+                    <div class="card small" style="height:auto; padding:20px;">
+                    <!-- Card Content -->
+                        <p> Company:</p>
+                        <p>Experience:</p>
+                        <p>Location: </p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- Work From Home Section-->
+        <div class="divider"></div>
+        <div class="section">
+            <h5 style="font-family: 'Abel', sans-serif;">Work From Home Jobs</h5>
+            <div class="row">
+                <div class="col s4">
+                    <div class="card small" style="height:auto; padding:20px;">
+                    <!-- Card Content -->
+                        <p> Company:</p>
+                        <p>Experience:</p>
+                        <p>Location: </p>
+                    </div>
+                </div>
+      
+                <div class="col s4">
+                    <div class="card small" style="height:auto; padding:20px;">
+                    <!-- Card Content -->
+                        <p> Company:</p>
+                        <p>Experience:</p>
+                        <p>Location: </p>
+                    </div>
+                </div>
+                             
+                <div class="col s4">
+                    <div class="card small" style="height:auto; padding:20px;">
+                    <!-- Card Content -->
+                        <p> Company:</p>
+                        <p>Experience:</p>
+                        <p>Location: </p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+  
+     <!--Walk In Jobs Section-->
+        <div class="divider"></div>
+        <div class="section">
+            <h5 style="font-family: 'Abel', sans-serif;">Walk-in Jobs</h5>
+            <div class="row">
+                <div class="col s4">
+                    <div class="card small" style="height:auto; padding:20px;">
+                    <!-- Card Content -->
+                        <p> Company:</p>
+                        <p>Experience:</p>
+                        <p>Location: </p>
+                    </div>
+                </div>
+      
+                <div class="col s4">
+                    <div class="card small" style="height:auto; padding:20px;">
+                    <!-- Card Content -->
+                        <p> Company:</p>
+                        <p>Experience:</p>
+                        <p>Location: </p>
+                    </div>
+                </div>
+                             
+                <div class="col s4">
+                    <div class="card small" style="height:auto; padding:20px;">
+                    <!-- Card Content -->
+                        <p> Company:</p>
+                        <p>Experience:</p>
+                        <p>Location: </p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
 </div>
-<!-- Content part 1 ends here -->
+<!-- Page Layout ends-->
 
-<!-- Contents part 2 starts here-->
-<div class="container card my-3 ">
- <h5 class="card-title m-4">Top Companies</h5>
-  <div class="card-body">
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+<!--Testimonials section starts-->
+<div class="row center-align">
+    <h4> Testimonials </h4> 
+    <br>
+      <div class="col s4">
+       <i class="material-icons prefix md-48">verified</i>
+       <h4>Speeds up development</h4>
+       <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  </p>
+        <!-- Promo Content 1 goes here -->
       </div>
-    </div>
-
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+      <div class="col s4">
+       <i class="material-icons prefix md-48">verified</i>
+       <h4>User Experience Focused</h4>
+       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  </p>
+        <!-- Promo Content 2 goes here -->
       </div>
+      <div class="col s4">
+       <i class="material-icons prefix md-48">verified</i>
+       <h4> Easy to work with us</h4>
+       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+        <!-- Promo Content 3 goes here -->
     </div>
-
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 </div>
-<!-- Content Part 2 ends here -->
+<!-- Testimonials section ends-->
 
+<!-- Updates-->
 
-<!-- Contents part 3 starts here-->
-<div class="container card my-3">
- <h5 class="card-title m-4">Recent Jobs</h5>
-  <div class="card-body">
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="container center-align" >
+    <h3>Stay Updated ! </h3>
+    Enter your Email Id to keep yourself updated with the new job openings.
+    <div class="row">
+        <form class="col s12">
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix teal600">email</i>
+                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                <span class="btn">Subscribe</span>
+                <label >Email ID</label>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-4">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-  </div>
+        </form>
+    </div> 
 </div>
-</div>
-<!-- Content Part 3 ends here -->
 
-<!-- Content part 4 (Carousel) starts here-->
+<!-- Updtaes end here-->
 
-
-<!--Conetnt Part 4 (carousel) -->
 <!--Footer starts here-->
-<footer>
-  <div class="card bg-dark p-5 text-white ">
-    <div class="row" >
-    <!-- Column 1-->
-      <div class="col-sm" >
-        <h5>Column 1 </h5>
-        <div class="row" >
-          <ul> 
-            <li> row1 </li>
-            <li> row1 </li>
-            <li> row1 </li>
-          </ul>
+<div class="page-footer teal center-align">
+    <div class="row">
+     <div class="col s3">
+            <h5 class="white-text">Information</h5>
+            <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">careers</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Term of Use</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">FAQs</a></li>
+            </ul>
         </div>
-      </div>
-    <!-- Column 1 ends -->  
 
-    <!-- Column 2 -->
-      <div class="col-sm">
-        <h5>Column 1 </h5>
-        <div class="row">
-          <ul> 
-            <li> row1 </li>
-            <li> row1 </li>
-            <li> row1 </li>
-          </ul>
-        </div>
+        <div class="col s3">
+            <h5 class="white-text">Job Seekers</h5>
+            <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Jobs Search</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Job seekers Login</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Upload Resume</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Career Advice</a></li>
+            </ul>
       </div>
-    <!-- Cloumn 2 Ends-->
-
-    <!-- Column 3 -->
-      <div class="col-sm">
-        <h5>Column 1 </h5>
-        <div class="row">
-          <ul> 
-            <li> row1 </li>
-            <li> row1 </li>
-            <li> row1 </li>
-          </ul>
-        </div>
-      </div>
-    <!-- Cloumn 3 Ends-->
-
-    <!-- Column 4 -->
-      <div class="col-sm">
-        <h5>Column 1 </h5>
-        <div class="row">
-          <ul> 
-            <li> row1 </li>
-            <li> row1 </li>
-            <li> row1 </li>
-          </ul>
-        </div>
-      </div>
-    <!-- Cloumn 4 Ends-->
-
     
-  </div>
+        <div class="col s3">
+            <h5 class="white-text">Employeers</h5>
+            <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Employeer Login</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Job Posting</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Advertise with us</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Research Reports</a></li>
+            </ul>
+        </div>
 
-  @Lets Upgrade Online Job Portal 
+        <div class="col s3">
+            <h5 class="white-text">Stay Connected</h5>
+            <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+           </ul>
+        </div>
+   </div>
 </div>
-</footer>
+<!-- Footer Ends Here -->
 
-<!-- Footer Ends Here-->
+
 </body>
 </html>
 
