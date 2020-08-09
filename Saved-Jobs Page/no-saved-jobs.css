@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    background-color: #44a48f;
+    height: 10vh;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    background-color: #e2f3ef;
+    margin: auto;
+    min-height: 100vh;
+    padding: 10vh 0vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container h1 strong{
+    color: #4fb59f;
+}
+.container h3 {
+    margin: 1% 0%;
+}
+
+.job-filters{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1%;
+}
+.job-filters .filter-button{
+    padding: 5px;
+    height: 40px;
+    min-width: 150px;
+    font-size: 1.25em;
+    cursor: pointer;
+    border: 1px solid #44a48f;
+    background-color: #fff;
+    outline: none;
+    position: relative;
+    color: #44a48f;
+}
+.job-filters ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    z-index: +99;
+}
+.job-filters ul li:hover ul{
+    transition: .5s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+.job-filters ul li i{
+    margin-top: 3px;
+}
+.job-filters ul li ul{
+    flex-direction: column;
+    margin: 11px 0px;
+    width: 150px !important;
+    background-color: #fff;
+    text-align: left;
+    padding: 0px 10px;
+    z-index: +999;
+    opacity: 0;
+    visibility: hidden;
+}
+.job-filters ul li ul li{
+    margin: 10px 0px;
+    font-size: .9em;
+}
+.job-filters .filter-button i{
+    font-size: .75em;
+    position: absolute;
+    top: 8px;
+    padding: 0px 5px;
+}
+.job-search{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0% 5%;
+}
+.job-search input{
+    width: 60%;
+    height: 40px;
+    text-align: center;
+    outline: none;
+    color: #557489;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: 1px solid #44a48f;
+    z-index: 0;
+}
+
+::placeholder{
+    color: #557489;
+    opacity: .5;
+}
+.job-search button{
+    width: 30%;
+    text-align: center;
+    outline: none;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #44a48f;
+    cursor: pointer;
+    background-color: #ffffff;
+    font-size: 1.25em;
+    color: #44a48f;
+}
+.job-search i{
+    margin-left: -50px;
+    z-index: 0;
+    color: #44a48f;
+    font-size: 1.5em;
+}
+.job-search button:active{
+    background-color: #f7f7f7;
+    color: #158754;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #44a48f;
+    height: 10vh;
+    width: 100%;
+}
