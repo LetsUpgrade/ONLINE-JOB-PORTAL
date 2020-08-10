@@ -1,0 +1,24 @@
+.button5 {border-radius: 50%;}
+
+.button5 {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+
+ 
+ 
+
+.nav-item{
+    padding: 0px 10px;
+}
+
+.link-text{
+    color: black;
+}
