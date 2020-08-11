@@ -3,7 +3,7 @@
 <hr>
 
 ##Desktop Version
-[PC Version of no saved jobs]("./Unsaved Jobs Page.png")
+[PC Version of no saved jobs]("./UnsavedJobsPage.png")
 
 ##Mobile Version
-[Mobile Version]("./Unsaved Jobs Page.png")
+[Mobile Version]("./UnsavedJobsPage.png")
