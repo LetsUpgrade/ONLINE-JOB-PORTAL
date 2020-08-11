@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <title>John Doe | Saved Jobs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    
+    <link rel="stylesheet" type="text/css" href="./no-saved-jobs.css">
+    <link rel="stylesheet" type="text/css" href="./saved-jobs.css">
+</head>
+
+<body>
+    <nav class="center">
+        <h1>This is a Navbar</h1>
+    </nav>
+
+    <div class="container">
+        <h1>Add more to the list of your <strong>dream</strong> jobs.</h1>
+        <h3>Search and save jobs now!</h3>
+        <div class="job-filters">
+            <ul>
+                <li class="filter-button">
+                    <div class="filter-heading">
+                        <h5 class="my-auto">Job Type</h5>
+                        <h4><i class="fas fa-angle-down"></i></h4>
+                    </div>
+                    <ul>
+                        <li>Full Time</li>
+                        <li>Internship</li>
+                        <li>Part Time</li>
+                    </ul>
+                </li>
+                <li class="filter-button">
+                    <div class="filter-heading">
+                        <h5 class="my-auto">Job Sector</h5>
+                        <h4><i class="fas fa-angle-down"></i></h4>
+                    </div>
+                    <ul>
+                        <li>IT</li>
+                        <li>Mechanical</li>
+                        <li>Electrical</li>
+                    </ul>
+                </li>
+                <li class="filter-button">
+                    <div class="filter-heading">
+                        <h5 class="my-auto">Job Role</h5>
+                        <h4><i class="fas fa-angle-down"></i></h4>
+                    </div>
+                    <ul>
+                        <li>Web Developer</li>
+                        <li>App Developer</li>
+                        <li>UI/UX Designer</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="job-search">
+            <input type="text" placeholder="Enter Job Title"> <i class="fas fa-search-dollar"></i>
+            <button type="submit">
+                <h4>Search</h4>
+            </button>
+        </div>
+        <hr>
+        <div class="saved-jobs">
+            <h1>Here are the Jobs you've saved earlier.</h1>
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Job Title</th>
+                    <th scope="col">Job Type</th>
+                    <th scope="col">Experience</th>
+                    <th scope="col">Salary</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Python Developer</th>
+                    <td>Internship</td>
+                    <td>2-3 years</td>
+                    <td>Performance based</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Java Developer</th>
+                    <td>Internship</td>
+                    <td>2-3 years</td>
+                    <td>10-15K</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Front-end Developer</th>
+                    <td>Internship</td>
+                    <td>1-2 years</td>
+                    <td>5-7K</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sales Executive</th>
+                    <td>Internship</td>
+                    <td>3-4 years</td>
+                    <td>Performance based</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Python Developer</th>
+                    <td>Internship</td>
+                    <td>2-3 years</td>
+                    <td>Performance based</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

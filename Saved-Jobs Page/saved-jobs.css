@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 15vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-weight: 800;
+}
+hr{
+    border: 2px solid #44a48f;
+    width: 100%;
+    margin: 25px;
+}
+.filter-heading h5{
+    font-weight: 600;
+}
+.job-search button{
+    width: 30%;
+    text-align: center;
+    outline: none;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #44a48f;
+    cursor: pointer;
+    background-color: #ffffff;
+    font-size: 1.25em;
+    color: #44a48f;
+}

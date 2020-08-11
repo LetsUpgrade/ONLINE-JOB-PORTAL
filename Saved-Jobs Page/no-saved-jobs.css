@@ -86,13 +86,14 @@ h5 {
     opacity: 1;
 }
 .job-filters ul li i{
-    margin-top: 3px;
+    margin-top: 5px;
 }
 .job-filters ul li ul{
     flex-direction: column;
-    margin: 11px 0px;
+    margin: 6px 0px;
     width: 150px !important;
     background-color: #fff;
+    border: 1px solid #44a48f;
     text-align: left;
     padding: 0px 10px;
     z-index: +999;
@@ -102,12 +103,24 @@ h5 {
 .job-filters ul li ul li{
     margin: 10px 0px;
     font-size: .9em;
+    z-index: +9999;
+}
+.job-filters ul li ul li :hover{
+    background-color: #4fb59f;
 }
 .job-filters .filter-button i{
     font-size: .75em;
     position: absolute;
     top: 8px;
     padding: 0px 5px;
+}
+.filter-heading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .job-search{
     width: 50%;
