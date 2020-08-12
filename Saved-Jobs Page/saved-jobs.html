@@ -4,19 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <title>John Doe | Saved Jobs</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-        crossorigin="anonymous" />
+        crossorigin="anonymous" /-->
     <link rel="stylesheet" type="text/css" href="./saved-jobs.css">
+    <meta property="og:url" content="https://coliff.github.io/dark-mode-switch/">
+    <link rel="stylesheet" href="./header_footer/dark-mode/dark-mode.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="https://use.fontawesome.com/364abdde15.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./header_footer/css/header_footer.css" />
 </head>
 
 <body>
-    <nav class="center">
-        <h1>This is a Navbar</h1>
-    </nav>
+    <header class="header_area">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">JOB PORTAL</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Company Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blogs</a>
+                        </li>
+                        <div class="custom-control custom-switch" style="margin-top: 10px; margin-left: 10px;">
+                            <input type="checkbox" class="custom-control-input" id="darkSwitch">
+                            <label class="custom-control-label" for="darkSwitch"></label>
+                        </div>
+                        <script src="./header_footer/dark-mode/dark-mode-switch.min.js"></script>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
 
     <div class="main-container">
         <h1>Add more to the list of your <strong>dream</strong> jobs.</h1>
@@ -61,20 +102,22 @@
         <div class="job-search">
             <input type="text" placeholder="Enter Job Title"> <i class="fas fa-search-dollar"></i>
             <button type="submit">
-                <h4>Search</h4>
+                <h4 class="my-auto">Search</h4>
             </button>
         </div>
         <hr>
         <div class="saved-jobs">
             <h1>Here are the Jobs you've saved earlier.</h1>
             <div class="table-responsive-sm">
-                <table class="table table-hover">
+                <table class="table table-dark table-striped table-hover">
                     <thead>
                         <tr>
                             <th scope="col">Job Title</th>
                             <th scope="col">Job Type</th>
                             <th scope="col">Experience</th>
                             <th scope="col">Salary</th>
+                            <th scope="col">Applied On</th>
+                            <th scope="col">Status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -83,42 +126,89 @@
                             <td>Internship</td>
                             <td>2-3 years</td>
                             <td>Performance based</td>
+                            <td>27/06/2020</td>
+                            <td>Accepted</td>
                         </tr>
                         <tr>
                             <th scope="row">Java Developer</th>
                             <td>Internship</td>
                             <td>2-3 years</td>
                             <td>10-15K</td>
+                            <td>27/06/2020</td>
+                            <td>Accepted</td>
                         </tr>
                         <tr>
                             <th scope="row">Front-end Developer</th>
                             <td>Internship</td>
                             <td>1-2 years</td>
                             <td>5-7K</td>
+                            <td>27/06/2020</td>
+                            <td>Accepted</td>
                         </tr>
                         <tr>
                             <th scope="row">Sales Executive</th>
                             <td>Internship</td>
                             <td>3-4 years</td>
                             <td>Performance based</td>
+                            <td>27/06/2020</td>
+                            <td>Accepted</td>
                         </tr>
                         <tr>
                             <th scope="row">Python Developer</th>
                             <td>Internship</td>
                             <td>2-3 years</td>
                             <td>Performance based</td>
+                            <td>27/06/2020</td>
+                            <td>Accepted</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="row">
+            <div class="col-sm-12 col-lg-3 col-md-6">
+                <h3>Information</h3>
+                <a class="link-text" href="#!">About Us</a><br>
+                <a class="link-text" href="#!">Contact Us</a><br>
+                <a class="link-text" href="#!">Terms Of Use</a><br>
+                <a class="link-text" href="#!">FAQs</a><br>
+            </div>
+
+            <div class="col-sm-12 col-lg-3 col-md-6">
+                <h3>Job seekers</h3>
+                <a class="link-text" href="#!">Job Search</a><br>
+                <a class="link-text" href="#!">Career Advices</a><br>
+                <a class="link-text" href="#!">Resume Builder/a><br>
+                    <a class="link-text" href="#!">Find Companies</a><br>
+            </div>
+
+            <div class="col-sm-12 col-lg-3 col-md-6">
+                <h3>Employers</h3>
+                <a class="link-text" href="#!">Job Posting</a><br>
+                <a class="link-text" href="#!">Advertise With Us</a><br>
+                <a class="link-text" href="#!">Access Resumes</a><br>
+                <a class="link-text" href="#!">FAQs</a><br>
+            </div>
+
+            <div class="col-sm-12  col-lg-3 col-md-6">
+                <h3>Stay Connected</h3>
+
+                <i class='fab fa-twitter' style='font-size:48px; padding: 5px;'></i>
+                <i class='fab fa-linkedin' style='font-size:48px; padding: 5px;'></i>
+                <i class='fab fa-google' style='font-size:48px; padding: 5px;'></i>
+            </div>
+        </div>
+    </div>
+    <p class="text-center">@Build With Let's Upgrade</p>
+    <!--script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
-    </script>
+    </script-->
 </body>
 
 </html>

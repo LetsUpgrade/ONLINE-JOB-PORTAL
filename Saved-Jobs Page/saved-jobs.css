@@ -16,14 +16,15 @@ body {
 nav {
     position: absolute;
     top: 0;
-    background-color: #44a48f;
+    background-color: #222222;
     height: 10vh;
     width: 100%;
+    color: #e7e7e7;
 }
 
 .main-container {
     width: 90%;
-    background-color: #e2f3ef;
+    background-color: #e7e7e7;
     margin: auto;
     min-height: 100vh;
     padding: 10vh 0vh;
@@ -48,7 +49,7 @@ h5 {
 }
 
 .main-container h1 strong{
-    color: #4fb59f;
+    color: #181818;
 }
 .main-container h3 {
     margin: 1% 0%;
@@ -66,11 +67,11 @@ h5 {
     min-width: 150px;
     font-size: 1.25em;
     cursor: pointer;
-    border: 1px solid #44a48f;
+    border: 1px solid #222222;
     background-color: #fff;
     outline: none;
     position: relative;
-    color: #44a48f;
+    color: #222222;
 }
 .job-filters ul{
     width: 100%;
@@ -97,7 +98,7 @@ h5 {
     margin: 6px 0px;
     width: 150px !important;
     background-color: #fff;
-    border: 1px solid #44a48f;
+    border: 1px solid #222222;
     text-align: left;
     padding: 0px 10px;
     z-index: +999999;
@@ -139,15 +140,15 @@ h5 {
     height: 40px;
     text-align: center;
     outline: none;
-    color: #557489;
+    color: #222;
     font-size: 1.5em;
     border-radius: 5px;
-    border: 1px solid #44a48f;
+    border: 1px solid #222222;
     z-index: 0;
 }
 
 ::placeholder{
-    color: #557489;
+    color: #222;
     opacity: .5;
 }
 .job-search button{
@@ -157,16 +158,16 @@ h5 {
     outline: none;
     height: 40px;
     border-radius: 5px;
-    border: 1px solid #44a48f;
+    border: 1px solid #222222;
     cursor: pointer;
     background-color: #ffffff;
     font-size: 1.25em;
-    color: #44a48f;
+    color: #222222;
 }
 .job-search i{
     margin-left: -50px;
     z-index: 0;
-    color: #44a48f;
+    color: #222222;
     font-size: 1.5em;
 }
 .job-search button:active{
@@ -176,7 +177,7 @@ h5 {
 footer {
     position: absolute;
     bottom: 0;
-    background-color: #44a48f;
+    background-color: #222222;
     height: 10vh;
     width: 100%;
 }
@@ -184,13 +185,25 @@ h1{
     font-weight: 800;
 }
 hr{
-    border: 2px solid #44a48f;
+    border: 2px solid #222222;
     width: 100%;
     margin: 25px;
 }
 .filter-heading h5{
     font-weight: 600;
 }
+
+.saved-jobs{
+    width: 100%;
+}
+
+.nav-item{
+    padding: 0px 10px;
+}
+.link-text{
+    color: black;
+}
+
 @media screen and (max-width: 1000px){
     .job-filters{
         width: 100%;

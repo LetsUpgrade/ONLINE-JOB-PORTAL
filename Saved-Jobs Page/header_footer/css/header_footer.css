@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-item{
+    padding: 0px 10px;
+}
+.link-text{
+    color: black;
+}
+.jumbotron{
+    width: 100%;
+    overflow: hidden;
+}
+/* To modify anything for dark mode - Go to dark-mode folder and then edit the dark-mode.css file.*/
