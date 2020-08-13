@@ -1,0 +1,98 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:white;
+    margin: 0;
+    padding: 0;
+      
+}
+
+.jumbotron_decor{
+    background-color:gainsboro;
+   color: black;
+   margin: 2em 0;
+   }
+   
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    text-align: center;
+    
+}
+@keyframes abcd{
+    0%{margin-left:100px;}
+    10%{margin-left:50px;}
+    20%{margin-right:100px;}
+    30%{margin-right:50px;}
+    40%{margin-left:100px;}
+    50%{margin-left:50px;}
+    60%{margin-right:100px;}
+    70%{margin-right:50px;}
+    80%{margin-left:100px;}
+    90%{margin-left:50px;}
+    100%{margin-left:100px;}
+    
+}
+/*Media Queries*/
+@media (min-width:320px) {
+    .container {
+        width:320px;
+    }
+
+}
+@media (min-width:481px) {
+    .container {
+        width:481px;
+    }
+
+}
+@media (min-width:641px) {
+    .container {
+        width:641px;
+    }
+
+}
+@media (min-width:961px) {
+    .container {
+        width:961px;
+    }
+
+}
+@media (min-width:1000px) {
+    .container {
+        width:1000px;
+    }
+    i{
+        font-size: 60px;
+    }
+
+}
+
+@media (max-width:481px) {
+    h1{
+        text-align: center;
+        font-size: 20px;
+    }
+    i{
+        font-size: 28px;
+    }
+    
+}
+
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+border-radius: 5px;
+background:black;
+}
+::-webkit-scrollbar-thumb:hover {
+background: darkslategrey; 
+}
