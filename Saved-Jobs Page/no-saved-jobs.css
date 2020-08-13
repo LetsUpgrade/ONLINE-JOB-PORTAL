@@ -23,7 +23,7 @@ nav {
 
 .main-container {
     width: 90%;
-    background-color: #e2f3ef;
+    background-color: #e7e7e7;
     margin: auto;
     min-height: 100vh;
     padding: 10vh 0vh;
@@ -49,7 +49,7 @@ h5 {
 }
 
 .main-container h1 strong{
-    color: #4fb59f;
+    color: #181818;
 }
 .main-container h3 {
     margin: 1% 0%;

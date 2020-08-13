@@ -51,3 +51,9 @@
 [data-theme="dark"] .nav-item:hover{
     background-color: #525252;
 }
+[data-theme="dark"] .main-container{
+  background-color: #111;
+}
+[data-theme="dark"] h1 strong{
+  color: #fff;
+}
