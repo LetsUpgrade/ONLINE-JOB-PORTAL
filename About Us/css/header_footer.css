@@ -1,0 +1,67 @@
+.nav-item{
+    padding: 0px 10px;
+}
+.link-text{
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+.jumbotron{
+    overflow: hidden;
+}
+.carousel-item{
+    height: 500px;
+} 
+.carousel-item img{
+    height: 500px;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    border-right: 1px solid #333;
+}
+::-webkit-scrollbar{
+        width: 15px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: black;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: darkgrey; 
+  }
+nav{
+    background-color: rgb(155, 155, 228);
+}
+.navbar-brand :hover,
+.nav-link:hover {
+    color: #000 !important;
+}
+a{
+    font-family: sans-serif;
+}
+@media screen and (max-width:750px){
+    .about{
+        border-bottom: 1px solid #333;
+        margin-bottom: 2%;
+        border-right: none;
+    }
+    .carousel-item{
+        height: 300px;
+    } 
+    .carousel-item img{
+        height: 300px;
+    }
+}
+
+/* To modify anything for dark mode - Go to dark-mode folder and then edit the dark-mode.css file.*/
