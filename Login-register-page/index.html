@@ -8,67 +8,130 @@
 	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="dark-mode/dark-mode.css">
+	<link rel="stylesheet" href="css/header_footer.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dark-mode/dark-mode.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="https://use.fontawesome.com/364abdde15.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/620244f586.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-	
-	<div class="limiter">
-		<div class="container-login100" >
-			<div class="wrap-login100">
-				<form class="login100-form validate-form">
-					
-
-					<span class="login100-form-title p-b-34 p-t-27">
-						Log in
-					</span>
-					<div class="social-icons">
-						<a href="https://www.linkedin.com/in/tejas-tapas-971847171/" target="_blank"><i class="fab fa-linkedin"></i></a>
-						<a href="https://github.com/Tejas1510" target="_blank"><i class="fab fa-github"></i></a>
-						<a href="https://www.instagram.com/tapastejas/" target="_blank"><i class="fab fa-instagram"></i></a>
-						<a href="https://www.facebook.com/profile.php?id=100009796326893" target="_blank"><i class="fab fa-facebook"></i></a>
-					</div>
-					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="username" placeholder="Username">
-						<span class="focus-input100" data-placeholder="&#xf207;"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="pass" placeholder="Password">
-						<span class="focus-input100" data-placeholder="&#xf191;"></span>
-					</div>
-
-					<div class="contact100-form-checkbox">
-						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-						<label class="label-checkbox100" for="ckb1">
-							Remember me
-						</label>
-					</div>
-
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							<a>
-							Login
-							</a>
-						</button>
-							<button class="login100-form-btn">
-								<a href="http://127.0.0.1:5500/register.html?username=&email=&pass=">
-								Register
-								</a>
-							</button>
+	<!--Nav Bar/ Header Starts Here-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="#">JOB PORTAL</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+			
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<div class="mr-auto"></div>
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item item">
+						<a class="nav-link" href="#">About Us</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="#">Company Reviews</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="#">Blogs</a>
+						</li>
+  
+						<div class="custom-control custom-switch" style="margin-top: 10px; margin-left: 10px;">
+						  <input type="checkbox" class="custom-control-input" id="darkSwitch">
+						  <label class="custom-control-label" for="darkSwitch"></label>
+						</div>
+						<script src="dark-mode/dark-mode-switch.min.js"></script>
+						<script src="dark-mode/dark-mode-switch.js"></script>
+						  
 						
-					</div>
-
-					<div class="text-center p-t-90">
-						<a class="txt1" href="#">
-							Forgot Password?
-						</a>
-					</div>
-				</form>
-			</div>
+					</ul>
+				</div>
+			</nav>
 		</div>
+	</header>
+	<!-- Main Content Starts Here -->
+	<div class="signin-form">
+		<form action="/examples/actions/confirmation.php" method="post">
+			<h2>Sign in</h2>
+			<p class="hint-text">Sign in with your social media account</p>
+			<div class="social-btn text-center">
+				<a href="#" class="btn btn-primary btn-lg" title="Facebook"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="btn btn-info btn-lg" title="Twitter"><i class="fa fa-twitter"></i></a>
+				<a href="#" class="btn btn-danger btn-lg" title="Google"><i class="fa fa-google"></i></a>
+			</div>
+			<div class="or-seperator"><b>or</b></div>
+			<div class="form-group">
+				<input type="text" class="form-control input-lg" name="username" placeholder="Username" required="required">
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
+			</div>  
+			<div class="form-group">
+				<button type="submit" class="btn btn-success btn-lg btn-block signin-btn">Sign in</button>
+			</div>
+			<div class="text-center small"><a href="#">Forgot Your password?</a></div>
+		</form>
+		<div class="text-center small">Don't have an account? <a href="register.html">Sign up</a></div>
 	</div>
 	
-
 	<div id="dropDownSelect1"></div>
+	<!-- Footer Start Here -->
+	<div class="jumbotron jumbotron-fluid text-center">
+		<div class="row">
+		  <div class="col-sm-12 col-lg-3 col-md-6">
+			<h3>Information</h3>
+			<a class="link-text" href="#!">About Us</a><br>
+			<a class="link-text" href="#!">Contact Us</a><br>
+			<a class="link-text" href="#!">Terms Of Use</a><br>
+			<a class="link-text" href="#!">FAQs</a><br>
+		  </div>
+	  
+		  <div class="col-sm-12 col-lg-3 col-md-6">
+			<h3>Job seekers</h3>
+			<a class="link-text" href="#!">Job Search</a><br>
+			<a class="link-text" href="#!">Career Advices</a><br>
+			<a class="link-text" href="#!">Resume Builder/a><br>
+			<a class="link-text" href="#!">Find Companies</a><br>
+		  </div>
+	  
+		  <div class="col-sm-12 col-lg-3 col-md-6">
+			<h3>Employers</h3>        
+			<a class="link-text" href="#!">Job Posting</a><br>
+			<a class="link-text" href="#!">Advertise With Us</a><br>
+			<a class="link-text" href="#!">Access Resumes</a><br>
+			<a class="link-text" href="#!">FAQs</a><br>
+		  </div>
+		  
+		  <div class="col-sm-12  col-lg-3 col-md-6">
+			<h3>Stay Connected</h3>    
+			
+			<i class='fab fa-twitter' style='font-size:48px; padding: 5px;'></i>
+			<i class='fab fa-linkedin' style='font-size:48px; padding: 5px;'></i>
+			<i class='fab fa-google' style='font-size:48px; padding: 5px;'></i>
+		  </div>
+		</div>
+	  </div>
+	  <p class="text-center">@Build With Let's Upgrade</p>
+		<!-- Footer Ends Here-->
 </body>
 </html>
