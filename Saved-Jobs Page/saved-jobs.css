@@ -12,7 +12,18 @@ body {
     height: 100%;
     width: 100%;
 }
-
+::-webkit-scrollbar{
+    width: 20px;
+    background-color: #eee;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+}
+.scroller:hover::-webkit-scrollbar-thumb { background: black; }
+.scroller::-webkit-scrollbar-thumb:horizontal:hover,
+.scroller::-webkit-scrollbar-thumb:vertical:hover { background: #555; }
+.scroller::-webkit-scrollbar-thumb:horizontal:active,
+.scroller::-webkit-scrollbar-thumb:vertical:active { background: #999; }
 nav {
     position: absolute;
     top: 0;
