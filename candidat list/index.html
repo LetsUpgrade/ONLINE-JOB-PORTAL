@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Jobbly</title>
+</head>
+
+<body>
+    <!-- header starts -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg main-nav px-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
+                    aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar icon-bar-1"></span>
+                    <span class="icon-bar icon-bar-2"></span>
+                    <span class="icon-bar icon-bar-3"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="navbar-nav ml-auto text-uppercase f1">
+                        <li>
+                            <a href="#home" class=" active-first">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About us</a>
+                        </li>
+                        <li>
+                            <a href="#allJobs ">All Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#Interships">Interships</a>
+                        </li>
+                        <li>
+                            <a href="#govt">Govt. Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact us</a>
+                        </li>
+                    </ul>
+                    <div class="nav-item dropdown ml-auto">
+                        <div class="btn-extars">
+                            <a href="#" title="" class="post-job-btn"><i class="fa fa-plus" aria-hidden="true"></i>Post
+                                Jobs</a>
+                            <a href="#" title="" class="post-job-btn ml-3"><i class="fa fa-user-circle"
+                                    aria-hidden="true"></i>My Account</a>
+                        </div>
+                    </div>
+            </nav>
+        </div>
+        <!-- /.container -->
+    </header>
+
+
+
+    <!-- section-one starts -->
+    <section class="pageTitle">
+        <div class="container">
+            <div class="content">
+                <div class="candidate-list-text">
+                    <h2>Candidate list</h2>
+                </div>
+                <div class="path pt-2">
+                    <h5><a href="">Home /</a><a href=""> Resume Search /</a><span class="current"><a href="">
+                                Candidates</a></span></h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-one ends -->
+
+
+
+    <!-- section for candidate listing starts -->
+    <section class="candidate-listing">
+        <div class="container">
+            <div class="row ">
+                <aside class="col-lg-3 column columnl">
+                    <div class="search-box">
+                        <div>
+                            <form class="form-inline my-2 my-lg-0 input-icons">
+                                <i class="fa fa-search icon"></i>
+                                <input class="form-control mr-sm-2 input-field" type="search"
+                                    placeholder="Search Keywords" aria-label="Search">
+                            </form>
+                        </div>
+                        <div class="mt-3">
+                            <form class="form-inline my-2 my-lg-0 input-icons">
+                                <i class="fa fa-map-marker icon"></i>
+                                <input class="form-control mr-sm-2 input-field" type="search"
+                                    placeholder="Search Location" aria-label="Search">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="widget widget-one">
+                        <h3 class="sb-title open" id="1" onclick="toggle_visibility(this.id)">Last Activity <svg
+                                width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus asideicon"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z" />
+                                <path fill-rule="evenodd"
+                                    d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z" />
+                            </svg> </h3>
+
+                        <div class="specialism_widget">
+                            <div class="simple-checkbox">
+                                <p><input type="checkbox" name="smplechk" id="22"><label for="22">Last Hour</label></p>
+                                <p><input type="checkbox" name="smplechk" id="23"><label for="23">Last 24 hours</label>
+                                </p>
+                                <p><input type="checkbox" name="smplechk" id="24"><label for="24">Last 7 days</label>
+                                </p>
+                                <p><input type="checkbox" name="smplechk" id="25"><label for="25">Last 14 days</label>
+                                </p>
+                                <p><input type="checkbox" name="smplechk" id="26"><label for="26">Last 30 days</label>
+                                </p>
+                                <p><input type="checkbox" name="smplechk" id="27"><label for="27">All</label></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <h3 class="sb-title open" id="2" onclick="toggle_visibility(this.id)">Specialism <svg
+                                width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus asideicon"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z" />
+                                <path fill-rule="evenodd"
+                                    d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z" />
+                            </svg></h3>
+                        <div class="specialism_widget">
+                            <div class="simple-checkbox scrollbar">
+                                <p><input type="checkbox" name="spealism" id="as"><label for="as">Accountancy
+                                        (2)</label></p>
+                                <p><input type="checkbox" name="spealism" id="asd"><label for="asd">Banking (2)</label>
+                                </p>
+                                <p><input type="checkbox" name="spealism" id="errwe"><label for="errwe">Charity &
+                                        Voluntary (3)</label></p>
+                                <p><input type="checkbox" name="spealism" id="fdg"><label for="fdg">Digital & Creative
+                                        (4)</label></p>
+                                <p><input type="checkbox" name="spealism" id="sc"><label for="sc">Estate Agency
+                                        (3)</label></p>
+                                <p><input type="checkbox" name="spealism" id="aw"><label for="aw">Graduate (2)</label>
+                                </p>
+                                <p><input type="checkbox" name="spealism" id="ui"><label for="ui">IT Contractor
+                                        (7)</label></p>
+                                <p><input type="checkbox" name="spealism" id="saas"><label for="saas">Charity &
+                                        Voluntary (3)</label></p>
+                                <p><input type="checkbox" name="spealism" id="rrrt"><label for="rrrt">Digital & Creative
+                                        (4)</label></p>
+                                <p><input type="checkbox" name="spealism" id="eweew"><label for="eweew">Estate Agency
+                                        (3)</label></p>
+                                <p><input type="checkbox" name="spealism" id="bnbn"><label for="bnbn">Graduate
+                                        (2)</label></p>
+                                <p><input type="checkbox" name="spealism" id="ffd"><label for="ffd">IT Contractor
+                                        (7)</label></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget">
+                        <h3 class="sb-title open" id="9" onclick="toggle_visibility(this.id)">Offerd Salary <svg
+                                width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus asideicon"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z" />
+                                <path fill-rule="evenodd"
+                                    d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z" />
+                            </svg></h3>
+                        <div class="specialism_widget">
+                            <div class="simple-checkbox">
+                                <p><input type="checkbox" name="smplechk" id="1"><label for="1">10k - 20k</label></p>
+                                <p><input type="checkbox" name="smplechk" id="2"><label for="2">20k - 30k</label></p>
+                                <p><input type="checkbox" name="smplechk" id="3"><label for="3">30k - 40k</label></p>
+                                <p><input type="checkbox" name="smplechk" id="4"><label for="4">40k - 50k</label></p>
+                                <p><input type="checkbox" name="smplechk" id="28"><label for="5">50k - 60k</label></p>
+                                <p><input type="checkbox" name="smplechk" id="29"><label for="6">60k - 70k</label></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <h3 class="sb-title open" id="10" onclick="toggle_visibility(this.id)">Career Level <svg
+                                width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus asideicon"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z" />
+                                <path fill-rule="evenodd"
+                                    d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z" />
+                            </svg></h3>
+                        <div class="specialism_widget">
+                            <div class="simple-checkbox">
+                                <p><input type="checkbox" name="smplechk" id="5"><label for="7">Intermediate</label></p>
+                                <p><input type="checkbox" name="smplechk" id="6"><label for="8">Normal</label></p>
+                                <p><input type="checkbox" name="smplechk" id="7"><label for="9">Special</label></p>
+                                <p><input type="checkbox" name="smplechk" id="8"><label for="10">Experienced</label></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <h3 class="sb-title open" id="11" onclick="toggle_visibility(this.id)">Experince <svg
+                                width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus asideicon"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z" />
+                                <path fill-rule="evenodd"
+                                    d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z" />
+                            </svg></h3>
+                        <div class="specialism_widget">
+                            <div class="simple-checkbox">
+                                <p><input type="checkbox" name="smplechk" id="9"><label for="11">1Year to 2Year</label>
+                                </p>
+                                <p><input type="checkbox" name="smplechk" id="10"><label for="12">2Year to 3Year</label>
+                                </p>
+                                <p><input type="checkbox" name="smplechk" id="11"><label for="13">3Year to 4Year</label>
+                                </p>
+                                <p><input type="checkbox" name="smplechk" id="12"><label for="14">4Year to 5Year</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget">
+                        <h3 class="sb-title open" id="15" onclick="toggle_visibility(this.id)">Gender <svg width="1em"
+                                height="1em" viewBox="0 0 16 16" class="bi bi-plus asideicon" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z" />
+                                <path fill-rule="evenodd"
+                                    d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z" />
+                            </svg></h3>
+                        <div class="specialism_widget">
+                            <div class="simple-checkbox">
+                                <p><input type="checkbox" name="smplechk" id="13"><label for="15">Male</label></p>
+                                <p><input type="checkbox" name="smplechk" id="14"><label for="16">Female</label></p>
+                                <p><input type="checkbox" name="smplechk" id="15"><label for="17">Others</label></p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <div class="col-lg-9 column columnr">
+                    <ul class="searchList">
+                        <li>
+                            <div class="row rowSearchList">
+                                <div class="col-md-5 col-sm-5">
+                                    <img class="jobimg"
+                                        src="https://image.shutterstock.com/image-photo/portrait-young-man-sitting-his-260nw-463500722.jpg"
+                                        alt="profile photo">
+                                    <div>
+                                        <h3 class="name">John Doe</h3>
+                                        <h6 class="skill">Java Developer</h6>
+                                        <i class="fa fa-map-marker d-flex" aria-hidden="true">
+                                            <h6 class="location">Noida, Uttar Pradesh</h6>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <h4><span class="exp-salary">$5000</span> / month</h4>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <button><a href="#"> VIEW PROFILE </a> </button>
+
+                                </div>
+
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu nulla eget nisl
+                                dapibus finibus. Maecenas quis
+                                sem
+                                vel neque rhoncus dignissim. Ut et eros rhoncus, gravida tellus auctor,</p>
+                        </li>
+                        <li>
+                            <div class="row rowSearchList">
+                                <div class="col-md-5 col-sm-5">
+                                    <img class="jobimg"
+                                        src="https://image.shutterstock.com/image-photo/portrait-young-man-sitting-his-260nw-463500722.jpg"
+                                        alt="profile photo">
+                                    <div>
+                                        <h3 class="name">John Doe</h3>
+                                        <h6 class="skill">Java Developer</h6>
+                                        <i class="fa fa-map-marker d-flex" aria-hidden="true">
+                                            <h6 class="location">Noida, Uttar Pradesh</h6>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <h4><span class="exp-salary">$5000</span> / month</h4>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <button><a href="#"> VIEW PROFILE </a> </button>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu nulla eget nisl
+                                dapibus finibus. Maecenas quis
+                                sem
+                                vel neque rhoncus dignissim. Ut et eros rhoncus, gravida tellus auctor,</p>
+                        </li>
+                        <li>
+                            <div class="row rowSearchList">
+                                <div class="col-md-5 col-sm-5">
+                                    <img class="jobimg"
+                                        src="https://image.shutterstock.com/image-photo/portrait-young-man-sitting-his-260nw-463500722.jpg"
+                                        alt="profile photo">
+                                    <div>
+                                        <h3 class="name">John Doe</h3>
+                                        <h6 class="skill">Java Developer</h6>
+                                        <i class="fa fa-map-marker d-flex" aria-hidden="true">
+                                            <h6 class="location">Noida, Uttar Pradesh</h6>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <h4><span class="exp-salary">$5000</span> / month</h4>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <button><a href="#"> VIEW PROFILE </a> </button>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu nulla eget nisl
+                                dapibus finibus. Maecenas quis
+                                sem
+                                vel neque rhoncus dignissim. Ut et eros rhoncus, gravida tellus auctor,</p>
+                        </li>
+                        <li>
+                            <div class="row rowSearchList">
+                                <div class="col-md-5 col-sm-5">
+                                    <img class="jobimg"
+                                        src="https://image.shutterstock.com/image-photo/portrait-young-man-sitting-his-260nw-463500722.jpg"
+                                        alt="profile photo">
+                                    <div>
+                                        <h3 class="name">John Doe</h3>
+                                        <h6 class="skill">Java Developer</h6>
+                                        <i class="fa fa-map-marker d-flex" aria-hidden="true">
+                                            <h6 class="location">Noida, Uttar Pradesh</h6>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <h4><span class="exp-salary">$5000</span> / month</h4>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <button><a href="#"> VIEW PROFILE </a> </button>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu nulla eget nisl
+                                dapibus finibus. Maecenas quis
+                                sem
+                                vel neque rhoncus dignissim. Ut et eros rhoncus, gravida tellus auctor,</p>
+                        </li>
+                        <li>
+                            <div class="row rowSearchList">
+                                <div class="col-md-5 col-sm-5">
+                                    <img class="jobimg"
+                                        src="https://image.shutterstock.com/image-photo/portrait-young-man-sitting-his-260nw-463500722.jpg"
+                                        alt="profile photo">
+                                    <div>
+                                        <h3 class="name">John Doe</h3>
+                                        <h6 class="skill">Java Developer</h6>
+                                        <i class="fa fa-map-marker d-flex" aria-hidden="true">
+                                            <h6 class="location">Noida, Uttar Pradesh</h6>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <h4><span class="exp-salary">$5000</span> / month</h4>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <button><a href="#"> VIEW PROFILE </a> </button>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu nulla eget nisl
+                                dapibus finibus. Maecenas quis
+                                sem
+                                vel neque rhoncus dignissim. Ut et eros rhoncus, gravida tellus auctor,</p>
+                        </li>
+                        <li>
+                            <div class="row rowSearchList">
+                                <div class="col-md-5 col-sm-5">
+                                    <img class="jobimg"
+                                        src="https://image.shutterstock.com/image-photo/portrait-young-man-sitting-his-260nw-463500722.jpg"
+                                        alt="profile photo">
+                                    <div>
+                                        <h3 class="name">John Doe</h3>
+                                        <h6 class="skill">Java Developer</h6>
+                                        <i class="fa fa-map-marker d-flex" aria-hidden="true">
+                                            <h6 class="location">Noida, Uttar Pradesh</h6>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <h4><span class="exp-salary">$5000</span> / month</h4>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <button><a href="#"> VIEW PROFILE </a> </button>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu nulla eget nisl
+                                dapibus finibus. Maecenas quis
+                                sem
+                                vel neque rhoncus dignissim. Ut et eros rhoncus, gravida tellus auctor,</p>
+                        </li>
+                        <li>
+                            <div class="row rowSearchList">
+                                <div class="col-md-5 col-sm-5">
+                                    <img class="jobimg"
+                                        src="https://image.shutterstock.com/image-photo/portrait-young-man-sitting-his-260nw-463500722.jpg"
+                                        alt="profile photo">
+                                    <div>
+                                        <h3 class="name">John Doe</h3>
+                                        <h6 class="skill">Java Developer</h6>
+                                        <i class="fa fa-map-marker d-flex" aria-hidden="true">
+                                            <h6 class="location">Noida, Uttar Pradesh</h6>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <h4><span class="exp-salary">$5000</span> / month</h4>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <button><a href="#"> VIEW PROFILE </a> </button>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu nulla eget nisl
+                                dapibus finibus. Maecenas quis
+                                sem
+                                vel neque rhoncus dignissim. Ut et eros rhoncus, gravida tellus auctor,</p>
+                        </li>
+                        <li>
+                            <div class="row rowSearchList">
+                                <div class="col-md-5 col-sm-5 x">
+                                    <img class="jobimg"
+                                        src="https://image.shutterstock.com/image-photo/portrait-young-man-sitting-his-260nw-463500722.jpg"
+                                        alt="profile photo">
+                                    <div>
+                                        <h3 class="name">John Doe</h3>
+                                        <h6 class="skill">Java Developer</h6>
+                                        <i class="fa fa-map-marker d-flex" aria-hidden="true">
+                                            <h6 class="location">Noida, Uttar Pradesh</h6>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 x">
+                                    <h4><span class="exp-salary">$5000</span> / month</h4>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <button><a href="#"> VIEW PROFILE </a> </button>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu nulla eget nisl
+                                dapibus finibus. Maecenas quis
+                                sem
+                                vel neque rhoncus dignissim. Ut et eros rhoncus, gravida tellus auctor,</p>
+                        </li>
+                        <li>
+                            <div class="row rowSearchList">
+                                <div class="col-md-5 col-sm-5">
+                                    <img class="jobimg"
+                                        src="https://image.shutterstock.com/image-photo/portrait-young-man-sitting-his-260nw-463500722.jpg"
+                                        alt="profile photo">
+                                    <div>
+                                        <h3 class="name">John Doe</h3>
+                                        <h6 class="skill">Java Developer</h6>
+                                        <i class="fa fa-map-marker d-flex" aria-hidden="true">
+                                            <h6 class="location">Noida, Uttar Pradesh</h6>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <h4><span class="exp-salary">$5000</span> / month</h4>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <button><a href="#"> VIEW PROFILE </a> </button>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu nulla eget nisl
+                                dapibus finibus. Maecenas quis
+                                sem
+                                vel neque rhoncus dignissim. Ut et eros rhoncus, gravida tellus auctor,</p>
+                        </li>
+                        <li>
+                            <div class="row rowSearchList">
+                                <div class="col-md-5 col-sm-5">
+                                    <img class="jobimg"
+                                        src="https://image.shutterstock.com/image-photo/portrait-young-man-sitting-his-260nw-463500722.jpg"
+                                        alt="profile photo">
+                                    <div>
+                                        <h3 class="name">John Doe</h3>
+                                        <h6 class="skill">Java Developer</h6>
+                                        <i class="fa fa-map-marker d-flex" aria-hidden="true">
+                                            <h6 class="location">Noida, Uttar Pradesh</h6>
+                                        </i>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <h4><span class="exp-salary">$5000</span> / month</h4>
+                                </div>
+                                <div class="col-md-3 col-sm-3">
+                                    <button><a href="#"> VIEW PROFILE </a> </button>
+                                </div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu nulla eget nisl
+                                dapibus finibus. Maecenas quis
+                                sem
+                                vel neque rhoncus dignissim. Ut et eros rhoncus, gravida tellus auctor,</p>
+                        </li>
+                    </ul>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- section for candidate listing ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue-grey lighten-5">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left  pt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3 dark-grey-text">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold text-light">Information</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a class="dark-grey-text" href="#!">About Us</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Contact Us</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Terms Of Use</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">FAQs</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold text-light">Job seekers</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a class="dark-grey-text" href="#!">Job Search</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Career Advices</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Resume Builder</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Report a Problem</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold text-light">Employers</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a class="dark-grey-text" href="#!">Job Posting</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Advertise With Us</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Access Resumes</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">FAQs</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold text-light">Stay Connected</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+
+                    <!-- Facebook -->
+                    <p>
+                        <a class="fb-ic">
+                            <i class="fa fa-facebook-official white-text mr-4 text-light"><span
+                                    class="icon_name">Facebook</span></i>
+                        </a>
+                        1 </p>
+                    <!-- Twitter -->
+                    <p>
+                        <a class="tw-ic">
+                            <i class="fa fa-twitter white-text mr-4 text-light"><span
+                                    class="icon_name">Twitter</span></i>
+                        </a>
+                    </p>
+                    <!--Linkedin -->
+                    <p>
+                        <a class="li-ic">
+                            <i class="fa fa-linkedin white-text mr-4 text-light"><span
+                                    class="icon_name">Linkedin</span></i>
+                        </a>
+                    </p>
+                    <!--Instagram-->
+                    <p></p>
+                    <a class="ins-ic">
+                        <i class="fa fa-instagram white-text text-light"><span class="icon_name">Instagram </span></i>
+                    </a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center text-black-50 py-3 text-light">@
+            <a class="dark-grey-text" href="#"> Build With Let's Upgrade</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
