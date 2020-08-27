@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100vw;
+    overflow-x: scroll;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+/* section1 */
+
+#section-one {
+    background-image: url("http://themescare.com/demos/jobguru-v2/assets/img/breadcromb_bg.png");
+    height: 250px;
+}
+
+.container h1 {
+    padding-top: 70px;
+    color: rgb(37, 36, 36);
+    text-transform: capitalize;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 52px;
+}
+
+.container ul {
+    display: inline-flex;
+    list-style: none;
+    margin-bottom: 0%;
+}
+
+#section-two {
+    height: 50px;
+}
+
+.container ul li {
+    padding-right: 8px;
+    padding-left: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.container ul .active a {
+    text-decoration: none;
+    color: rgb(10, 255, 121) !important;
+    font-weight: 300;
+}
+
+/* section3 left */
+
+#section-three {
+    background: #f0f3fa none repeat scroll 0 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.sticky-top {
+    background-color: #f0f3fa;
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+}
+#company-details {
+    width: 100%;
+    height: 200px;
+}
+
+#account-settings {
+    background-color: #f0f3fa;
+    width: 100%;
+}
+.containers {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px 0 rgba(0, 24, 128, 0.2);
+}
+
+.containers img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.button {
+    position: absolute;
+    width: fit-content;
+    padding: 5px 25px;
+    border-radius: 10px;
+    margin-left: 32%;
+    top: 90px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.button a {
+    width: 100%;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    z-index: 1;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.containers:hover img {
+    opacity: 0.5;
+}
+.containers:hover .button {
+    opacity: 1;
+    background-color: #85b0ff;
+}
+.containers:hover .button a {
+    width: 50%;
+    opacity: 1;
+    color: black;
+}
+#account-settings {
+    height: 300px;
+}
+
+#account-settings ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+#account-settings ul li {
+    height: inherit;
+}
+hr {
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.settings i {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+.settings a {
+    margin-top: 14px;
+}
+#account-settings ul .active i {
+    color: #2e55fa;
+}
+#account-settings ul .active a {
+    color: #2e55fa !important;
+}
+#account-settings ul .active {
+    background: #e1e7ff;
+    border-left: 5px solid #2e55fa;
+}
+#account-settings ul .active:hover {
+    background: #e1e7ff;
+    border-left: 5px solid #2e55fa;
+}
+
+#account-settings ul li:hover {
+    border-left: 5px solid #2e55fa !important;
+    background: #fff;
+}
+
+/* section three right side */
+.col-xl-9 {
+    background-color: #fff;
+    padding-top: 50px;
+}
+.company-name h5 {
+    box-sizing: border-box;
+    color: rgb(35, 35, 35);
+    display: block;
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+.company-name hr {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #2e55fa;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+        padding-top: 20px;
+}
+.col-md-6 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.profile form {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-weight: 600;
+    text-size-adjust: 100%;
+    font-family: Lato, sans-serif;
+}
+.form-group .form-control {
+    background-color: rgb(255, 255, 255);
+    border-width: 0px;
+    border-style: none;
+    box-shadow: rgba(0, 24, 128, 0.1) 0px 0px 10px 0px;
+    box-sizing: border-box;
+    cursor: text;
+    font-weight: 400;
+    height: 50px;
+    line-height: 20px;
+    text-size-adjust: 100%;
+}
+
+.form-group textarea{
+    height: 150px !important;
+    
+}
+.pt{
+    padding-top: 40px;
+}
+.col-xl-9 button{
+    margin-left: 41%;
+    margin-bottom: 20px;
+    padding:  10px 20px;
+    color: #fff;
+    background-color: #2e55fa;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    label {
+        text-align: center;
+    }
+}
+.fa{
+    margin-right: 8px;
+}
+.twitter{
+    color: #85b0ff;
+
+}
+.facebook{
+    color: #0038a0;
+    
+}
+.instagram{
+    color: #d4001c;
+    
+}
+.linkedin{
+    color: #001ec9;
+}
+
+/* footer */
+
+.page-footer {
+    background: #272727;
+}
+
+.icon_name {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.icon_name:hover {
+    color: #00ff00;
+}
+
+.dark-grey-text {
+    color: #fff;
+}
