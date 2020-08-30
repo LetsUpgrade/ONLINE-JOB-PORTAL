@@ -94,22 +94,6 @@ header {
   transition: all 0.4s ease;
 }
 
-.main-header.fixed-nav .navbar-brand > img:last-of-type {
-  display: block;
-}
-
-.main-header.fixed-nav .navbar-brand > img:first-of-type {
-  display: none;
-}
-
-.navbar-brand {
-  color: #fff;
-}
-
-.main-header .navbar-brand img {
-  max-width: 40px;
-  animation: fadeInLeft 0.4s both 0.4s;
-}
 
 /* main-header end */
 
@@ -219,7 +203,6 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  /* background-color: #f1f1f1; */
   min-width: fit-content;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
