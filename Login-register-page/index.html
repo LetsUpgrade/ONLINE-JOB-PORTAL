@@ -4,20 +4,24 @@
 	<title>Login V3</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" href="dark-mode/dark-mode.css">
-	<link rel="stylesheet" href="css/header_footer.css" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="dark-mode/dark-mode.css">
-    <!-- Bootstrap CSS -->
+	<!-- <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/util.css"> -->
+	
+	<!-- <link rel="stylesheet" href="dark-mode/dark-mode.css"> -->
+	<!-- <link rel="stylesheet" href="css/header_footer.css" /> -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="dark-mode/dark-mode.css"> -->
+	<!-- Bootstrap CSS -->
+	<script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-    <script src="https://use.fontawesome.com/364abdde15.js"></script>
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/> -->
+    <!-- <script src="https://use.fontawesome.com/364abdde15.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -28,7 +32,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> --> 
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<!--Nav Bar/ Header Starts Here-->
@@ -70,30 +75,102 @@
 		</div>
 	</header>
 	<!-- Main Content Starts Here -->
-	<div class="signin-form">
-		<form action="/examples/actions/confirmation.php" method="post">
-			<h2>Sign in</h2>
-			<p class="hint-text">Sign in with your social media account</p>
-			<div class="social-btn text-center">
-				<a href="#" class="btn btn-primary btn-lg" title="Facebook"><i class="fa fa-facebook"></i></a>
-				<a href="#" class="btn btn-info btn-lg" title="Twitter"><i class="fa fa-twitter"></i></a>
-				<a href="#" class="btn btn-danger btn-lg" title="Google"><i class="fa fa-google"></i></a>
+	<div class="container">
+		<div class="forms-container">
+		  <div class="signin-signup">
+			<form action="#" class="sign-in-form">
+			  <h2 class="title">Sign in</h2>
+			  <div class="input-field">
+				<i class="fas fa-user"></i>
+				<input type="text" placeholder="Username" />
+			  </div>
+			  <div class="input-field">
+				<i class="fas fa-lock"></i>
+				<input type="password" placeholder="Password" />
+			  </div>
+			  <input type="submit" value="Login" class="btn solid" />
+			  <p class="social-text">Or Sign in with social platforms</p>
+			  <div class="social-media">
+				<a href="#" class="social-icon">
+				  <i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="#" class="social-icon">
+				  <i class="fab fa-twitter"></i>
+				</a>
+				<a href="#" class="social-icon">
+				  <i class="fab fa-google"></i>
+				</a>
+				<a href="#" class="social-icon">
+				  <i class="fab fa-linkedin-in"></i>
+				</a>
+			  </div>
+			</form>
+			<form action="#" class="sign-up-form">
+			  <h2 class="title">Sign up</h2>
+			  <div class="input-field">
+				<i class="fas fa-user"></i>
+				<input type="text" placeholder="Username" />
+			  </div>
+			  <div class="input-field">
+				<i class="fas fa-envelope"></i>
+				<input type="email" placeholder="Email" />
+			  </div>
+			  <div class="input-field">
+				<i class="fas fa-lock"></i>
+				<input type="password" placeholder="Password" />
+			  </div>
+			  <input type="submit" class="btn" value="Sign up" />
+			  <p class="social-text">Or Sign up with social platforms</p>
+			  <div class="social-media">
+				<a href="#" class="social-icon">
+				  <i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="#" class="social-icon">
+				  <i class="fab fa-twitter"></i>
+				</a>
+				<a href="#" class="social-icon">
+				  <i class="fab fa-google"></i>
+				</a>
+				<a href="#" class="social-icon">
+				  <i class="fab fa-linkedin-in"></i>
+				</a>
+			  </div>
+			</form>
+		  </div>
+		</div>
+  
+		<div class="panels-container">
+		  <div class="panel left-panel">
+			<div class="content">
+			  <h3>New here ?</h3>
+			  <p>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+				ex ratione. Aliquid!
+			  </p>
+			  <button class="btn transparent" id="sign-up-btn">
+				Sign up
+			  </button>
 			</div>
-			<div class="or-seperator"><b>or</b></div>
-			<div class="form-group">
-				<input type="text" class="form-control input-lg" name="username" placeholder="Username" required="required">
+			<img src="img/log.svg" class="image" alt="" />
+		  </div>
+		  <div class="panel right-panel">
+			<div class="content">
+			  <h3>One of us ?</h3>
+			  <p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+				laboriosam ad deleniti.
+			  </p>
+			  <button class="btn transparent" id="sign-in-btn">
+				Sign in
+			  </button>
 			</div>
-			<div class="form-group">
-				<input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
-			</div>  
-			<div class="form-group">
-				<button type="submit" class="btn btn-success btn-lg btn-block signin-btn">Sign in</button>
-			</div>
-			<div class="text-center small"><a href="#">Forgot Your password?</a></div>
-		</form>
-		<div class="text-center small">Don't have an account? <a href="register.html">Sign up</a></div>
-	</div>
-	
+			<img src="img/register.svg" class="image" alt="" />
+		  </div>
+		</div>
+	  </div>
+  
+	  
+
 	<div id="dropDownSelect1"></div>
 	<!-- Footer Start Here -->
 	<div class="jumbotron jumbotron-fluid text-center">
@@ -133,5 +210,6 @@
 	  </div>
 	  <p class="text-center">@Build With Let's Upgrade</p>
 		<!-- Footer Ends Here-->
+		<script src="app.js"></script>
 </body>
 </html>
