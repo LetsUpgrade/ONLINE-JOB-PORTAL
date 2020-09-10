@@ -91,24 +91,7 @@ header {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
-
-.main-header.fixed-nav .navbar-brand>img:last-of-type {
-    display: block;
-}
-
-.main-header.fixed-nav .navbar-brand>img:first-of-type {
-    display: none;
-}
-
-.navbar-brand {
-    color: #fff;
-}
-
-.main-header .navbar-brand img {
-    max-width: 40px;
-    animation: fadeInLeft 0.4s both 0.4s;
-}
-
+   
 /* main-header end */
 
 
@@ -509,8 +492,6 @@ input[type=checkbox], input[type=radio] {
     .x{
         width: 100%;
     }
-
-
 }
 
 /* section of candidate listing ends */
