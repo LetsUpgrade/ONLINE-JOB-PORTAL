@@ -1,0 +1,94 @@
+[data-theme="dark"] {
+  background-color: #101010 !important;
+  color: #eee;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #333 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #414141 !important;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #eee !important;
+}
+
+[data-theme="dark"] .jumbotron {
+  background-color: #111;
+}
+
+[data-theme="dark"] .card-header{
+  background-color: #111;
+}
+[data-theme="dark"] .card-footer {
+  background-color: #111;
+}
+[data-theme="dark"] .card-body{
+  background-color: #414141;
+}
+
+[data-theme="dark"] .link-text{
+  color: white;
+}
+
+[data-theme="dark"] .price-box__wrap {
+    background-color: #414141;
+}
+
+[data-theme="dark"] .card {
+  background-color: #414141;
+  border: 1px solid #414141;
+}
+
+[data-theme="dark"] .cont .card .face.face2 {
+    background: var(--gray-dark);
+}
+
+[data-theme="dark"] .cont .card .face.face2 .content a {
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+[data-theme="dark"] .form__field {
+  background-color: #414141;
+}
+
+[data-theme="dark"] .page-footer {
+  background-color: rgb(51 51 51);
+}
+
+[data-theme="dark"] .price-box__people{
+  color: #a2a2a2;
+}
+
+[data-theme="dark"] .better {
+  color: #a2a2a2;
+}
+
+[data-theme="dark"] .form-border {
+  background-color: #414141;
+}
+
+[data-theme="dark"] .btn-success {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+[data-theme="dark"] #registration {
+  background-color: #414141;
+}
+
+[data-theme="dark"] .sub {
+  background-color: #414141;
+  border-color: #E9EBED;
+}
+
+[data-theme="dark"] #registration h1 {
+  color: #eee;
+}
+
+[data-theme="dark"] #clo {
+  background: #eee;
+}
