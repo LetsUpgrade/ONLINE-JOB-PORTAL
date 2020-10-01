@@ -1,0 +1,12 @@
+{% extends 'hire_base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container">
+<form action="" method="post" style="padding:10px;">
+    {% csrf_token %}
+    {{form|crispy}}
+    <input type="submit" value="Update" class="btn btn-primary" />
+</form>
+</div>
+{% endblock content %}

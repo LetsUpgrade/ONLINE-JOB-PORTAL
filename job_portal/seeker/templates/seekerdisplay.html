@@ -1,0 +1,23 @@
+{% extends 'seeker_base.html' %}
+{% block content %}
+
+   
+
+        {% for job in jobs %}
+            <div class="card">
+                <div class="card-header">
+                    {{job.job_title}}
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{job.company_name}}|{{job.location}}|{{job.job_type}}</h5>
+                    <p class="card-text">{{job.description}}</p>
+                    <p class="card-text">No. of Post : {{job.vacany}}</p>
+                    <a href="#" class="btn btn-primary">Apply Here</a>
+                </div>
+                </div>
+                <br>
+        {% endfor %}
+        
+    </div>
+
+{% endblock content %}
