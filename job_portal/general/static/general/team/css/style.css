@@ -1,0 +1,150 @@
+#team1 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.container1 {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container1 .row:first-child {
+	margin-top: 0px;
+}
+.img-fluid{
+	width: 750px;
+	height: 300px;
+}
+
+.section-heading1 {
+	margin-bottom: 5px;
+	width: 100%;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 55px;
+	font-weight: 400;
+	color: var(--font-color);
+	text-align: center;
+}
+
+
+
+#teamHeading span {
+	color: #dc1b65;;
+}
+
+#team1 .team-description {
+	margin: 0 auto;
+}
+
+#team1 .team-description h4 {
+	font-family: 'Quicksand', sans-serif;
+	padding: 0;
+	font-size: 18px;
+	max-width: 500px;
+	text-align: center;
+}
+
+#team1 h4 { 
+	color: rgb(145, 143, 140);
+	font-size: 1.25rem;
+	text-align: left;
+	padding-top: 3rem;
+	font-weight: 200;
+	padding-bottom: 6rem;
+	line-height: 1.618;
+}
+#team1 .line { 
+	color: #dc1b65;
+}
+
+#team {
+	padding: 60px 0;
+  }
+  
+  #team .member {
+	text-align: center;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  #team .member .member-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: 0.2s;
+	padding: 15px 0;
+	background: rgba(29, 28, 41, 0.6);
+  }
+  
+  #team .member .member-info-content {
+	transition: margin 0.2s;
+	height: 40px;
+	transition: height 0.4s;
+  }
+  
+  #team .member:hover .member-info {
+	transition: 0.4s;
+  }
+  
+  #team .member:hover .member-info-content {
+	height: 80px;
+  }
+  
+  #team .member h4 {
+	font-weight: 700;
+	margin-bottom: 2px;
+	font-size: 18px;
+	color: #fff;
+  }
+  
+  #team .member span {
+	font-style: italic;
+	display: block;
+	font-size: 13px;
+	color: #fff;
+  }
+  
+  #team .member .social {
+	margin-top: 15px;
+  }
+  
+  #team .member .social a {
+	transition: none;
+	color: #fff;
+  }
+  
+  #team .member .social a:hover {
+	color: #1bb1dc;
+  }
+  
+  #team .member .social i {
+	font-size: 18px;
+	margin: 0 2px;
+  }
+  
+/* footer */
+.page-footer {
+	background-color: #1f1f1f;
+  }
+  
+  .dark-grey-text:hover {
+	text-decoration: none;
+  }
+  
+  .icon_name {
+	padding-left: 10px;
+	cursor: pointer;
+  }
+  
+  .dark-grey-text {
+	color: #fff;
+  }
+  /*End*/

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ONLINE JOB PORTAL</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta property="og:url" content="https://coliff.github.io/dark-mode-switch/">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+	<script src="https://use.fontawesome.com/364abdde15.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Scroll reveal CDN-->
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css" />
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'general/login/style.css' %}" />
+
+</head>
+
+
+<body>
+	<!--Nav Bar Starts Here-->
+	<header class="main-header">
+		<div class="container1">
+			<nav class="navbar navbar-expand-lg main-nav px-0">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
+					aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar icon-bar-1"></span>
+					<span class="icon-bar icon-bar-2"></span>
+					<span class="icon-bar icon-bar-3"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="mainMenu">
+					<ul class="navbar-nav ml-auto text-uppercase f1">
+						<li>
+							<a href="index" class=" active-first ">Home</a>
+						</li>
+						<li>
+							<a href="#">About Us</a>
+						</li>
+						<li>
+							<a href="# ">All Jobs</a>
+						</li>
+						<li>
+							<a href="#">Team</a>
+						</li>
+						<li>
+							<a href="#">Contact Us</a>
+						</li>
+					</ul>
+					<div class="nav-item dropdown ml-auto">
+					</div>
+					<div class="btn-group">
+						<ul>
+							<li>
+								<a type="button" class="btns btns-secondary dropdown-toggle active"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Sign Up
+								</a>
+								<div class="dropdown-menu dropdown-menu-right">
+									<a class="dropdown-item" href="seeker">Resister as Job Seeker</a>
+									<a class="dropdown-item" href="recruiter">Resister as Recruiter</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+		</nav>
+		</div>
+	</header>
+	<!-- End -->
+
+	    <!-- Error messages -->
+    <div>
+      {% for message in messages %}
+      <h5 class="text-center" style="color: red;">* {{message}}</h5>
+      {% endfor %}
+    </div>
+
+	<!-- Main Content Starts Here -->
+	<div class="container">
+		<div class="forms-container">
+			<div class="signin-signup">
+				<form action="logins" method="POST">
+				    {% csrf_token %}
+					<h2 class="title">Sign in</h2>
+					<div class="input-field">
+						<i class="fas fa-user"></i>
+						<input type="text" name="username" placeholder="Username" />
+					</div>
+					<div class="input-field">
+						<i class="fas fa-lock"></i>
+						<input type="password" name="password" placeholder="Password" />
+					</div>
+					<input type="submit" value="Login" class="btn solid" />
+				</form>
+			</div>
+		</div>
+
+		<div class="panels-container">
+			<div class="panel left-panel">
+				<div class="content">
+					<h3>New here ?</h3>
+					<p>
+						You are just a step away from your dream job.
+					</p>
+					<button class="btn transparent" id="sign-up-btn">
+						<a href="recruiter" class="text-light">Sign up as Recruiter</a> 
+					</button>
+					<button class="btn transparent" id="sign-up-btn" >
+						<a href="seeker" class="text-light">Sign up as Employee</a>
+					</button>
+				</div>
+				<img src="{% static 'general/login/img/log.svg' %}" class="image" alt="" />
+			</div>
+			<div class="panel right-panel">
+				<div class="content">
+					<h3>One of us ?</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+						laboriosam ad deleniti.
+					</p>
+					<button class="btn transparent" id="sign-in-btn">
+						Sign in
+					</button>
+				</div>
+				<img src="{% static 'general/login/img/register.svg' %}" class="image" alt="" />
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+
+
+	<!-- Footer -->
+	<footer class="page-footer font-small blue-grey lighten-5">
+		<div class="container1">
+			<div class="cont text-center text-md-left mt-3 pt-5">
+				<div class="row mt-3 dark-grey-text">
+					<div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+						<h6 class="text-uppercase font-weight-bold text-light">Information</h6>
+						<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+						<p>
+							<a class="dark-grey-text" href="#!">About Us</a>
+						</p>
+						<p>
+							<a class="dark-grey-text" href="#!">Contact Us</a>
+						</p>
+						<p>
+							<a class="dark-grey-text" href="#!">Terms Of Use</a>
+						</p>
+						<p>
+							<a class="dark-grey-text" href="#!">FAQs</a>
+						</p>
+					</div>
+					<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+						<h6 class="text-uppercase font-weight-bold text-light">Job seekers</h6>
+						<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+						<p>
+							<a class="dark-grey-text" href="#!">Job Search</a>
+						</p>
+						<p>
+							<a class="dark-grey-text" href="#!">Career Advices</a>
+						</p>
+						<p>
+							<a class="dark-grey-text" href="#!">Resume Builder</a>
+						</p>
+						<p>
+							<a class="dark-grey-text" href="#!">Report a Problem</a>
+						</p>
+					</div>
+					<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+						<h6 class="text-uppercase font-weight-bold text-light">Employers</h6>
+						<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+						<p>
+							<a class="dark-grey-text" href="#!">Job Posting</a>
+						</p>
+						<p>
+							<a class="dark-grey-text" href="#!">Advertise With Us</a>
+						</p>
+						<p>
+							<a class="dark-grey-text" href="#!">Access Resumes</a>
+						</p>
+						<p>
+							<a class="dark-grey-text" href="#!">FAQs</a>
+						</p>
+					</div>
+					<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+						<h6 class="text-uppercase font-weight-bold text-light">Stay Connected</h6>
+						<hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+						<p>
+							<a class="fb-ic">
+								<i class="fa fa-facebook-official white-text mr-4 text-light"><span
+										class="icon_name">Facebook</span></i>
+							</a>
+						</p>
+						<p>
+							<a class="tw-ic">
+								<i class="fa fa-twitter white-text mr-4 text-light"><span
+										class="icon_name">Twitter</span></i>
+							</a>
+						</p>
+						<p>
+							<a class="li-ic">
+								<i class="fa fa-linkedin white-text mr-4 text-light"><span
+										class="icon_name">Linkedin</span></i>
+							</a>
+						</p>
+						<p>
+							<a class="ins-ic">
+								<i class="fa fa-instagram white-text text-light"><span class="icon_name">Instagram
+									</span></i>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright text-center text-black-50 py-3 text-light">
+				<a class="dark-grey-text" href="#">@ Build With Let's Upgrade</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

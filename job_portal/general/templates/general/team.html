@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+	<head>
+		<title>Team Section Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0" />
+		<!-- Google Font Api -->
+		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+		<!-- Font Awesome  -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<!-- JQuery -->
+		<!--JQuery minified-->
+		<script
+			src="https://code.jquery.com/jquery-3.5.0.min.js"
+			integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+			crossorigin="anonymous"
+		></script>
+		<!-- Bootstrap -->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+		<!-- Normalize CSS and AOS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
+
+		<!-- Css Styles -->
+		  {% load static %}
+		  <link rel="stylesheet" href="{% static 'general/team/css/style.css' %}" />
+		  <link rel="stylesheet" href="{% static 'general/team/css/contact-page.css' %}" />
+
+	</head>
+
+	<body>
+  <!--Nav Bar Starts Here-->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg main-nav px-0">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu"
+          aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar icon-bar-1"></span>
+          <span class="icon-bar icon-bar-2"></span>
+          <span class="icon-bar icon-bar-3"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav ml-auto text-uppercase f1">
+            <li>
+              <a href="index" >Home</a>
+            </li>
+            <li>
+              <a href="about">About Us</a>
+            <li>
+              <a href="team" class=" active-first active">Team</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#contact">Contact Us</a>
+            </li>
+          </ul>
+          <div class="nav-item dropdown ml-auto">
+          </div>
+          <div class="btn-group">
+            <ul>
+              <li>
+                <a type="button" class="btns btns-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  Sign Up
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="seeker">Register as Job Seeker</a>
+                  <a class="dropdown-item" href="recruiter">Register as Recruiter</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    </nav>
+    </div>
+  </header>
+  <!-- End -->
+	
+		<section id="team1">
+			<div class="container container1">
+				<div class="row">
+					<h1 class="section-heading section-heading1 center" id="teamHeading">Our <span class="team-part">Team</span></h1>
+					<div class="team-description">
+						<hr class="mw-100 line" />
+						<h4 class="text-center">
+							We've got a strong team filled with caffeine addicted developers, gradient loving designers
+							and machine like working managers.
+						</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section id="team" class="team section-bg">
+			<div class="container" >
+	  
+			  <div class="row">
+				  
+				<div class="col-lg-3 col-md-6" >
+				  <div class="member">
+					<img src="{% static 'general/team/img/supriya.jpg' %}" width="500" height="500" class="img-fluid" alt=""/>
+					<div class="member-info">
+					  <div class="member-info-content">
+						<h4>Supriya Sinha</h4>
+						<span>Team Mentor</span>
+						<div class="social">
+							<a target="_blank" href="https://www.linkedin.com/in/supriyasinhaa"><i class="fa fa-linkedin"></i></a>	
+							<a target="_blank" href="https://github.com/supriyasinhaa"><i class="fa fa-github"></i></a>
+							<a target="_blank" href="https://www.instagram.com/supriyasinhaa/"><i class="fa fa-instagram"></i></a>
+							<a target="_blank" href="https://twitter.com/supriyasinhaa"><i class="fa fa-twitter"></i></a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-3 col-md-6">
+				  <div class="member">
+					<img src="{% static 'general/team/img/keshav.jpg' %}" class="img-fluid" alt=""/>
+					<div class="member-info">
+					  <div class="member-info-content">
+						<h4>Keshav Jha</h4>
+						<span>Particiant</span>
+						<div class="social">
+							<a target="_blank" href="https://www.linkedin.com/keshavjha007"><i class="fa fa-linkedin"></i></a>	
+							<a target="_blank" href="https://github.com/keshav304"><i class="fa fa-github"></i></a>
+							<a target="_blank" href="https://instagram.com/rylexr"><i class="fa fa-instagram"></i></a>
+							<a target="_blank" href="https://twitter.com/keshavkumar2678"><i class="fa fa-twitter"></i></a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-3 col-md-6" >
+				  <div class="member">
+					<img src="{% static 'general/team/img/tejas.jpg' %}" class="img-fluid" alt=""/>
+					<div class="member-info">
+					  <div class="member-info-content">
+						<h4>Tejas Tapas</h4>
+						<span>Participant</span>
+						<div class="social">
+							<a target="_blank" href="https://www.linkedin.com/in/tejas-tapas-971847171/"><i class="fa fa-linkedin"></i></a>	
+							<a target="_blank" href="https://github.com/Tejas1510"><i class="fa fa-github"></i></a>
+							<a target="_blank" href=""><i class="fa fa-instagram"></i></a>
+							<a target="_blank" href=""><i class="fa fa-twitter"></i></a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-3 col-md-6" >
+				  <div class="member">
+					<img src="{% static 'general/team/img/palak.jpg' %}" class="img-fluid" alt=""/>
+					<div class="member-info">
+					  <div class="member-info-content">
+						<h4>Palak Gupta</h4>
+						<span>Participant</span>
+						<div class="social">
+							<a target="_blank" href="https://www.linkedin.com/in/palakgupta2712"><i class="fa fa-linkedin"></i></a>	
+							<a target="_blank" href="https://github.com/palakgupta2712"><i class="fa fa-github"></i></a>
+							<a target="_blank" href=""><i class="fa fa-instagram"></i></a>
+							<a target="_blank" href=""><i class="fa fa-twitter"></i></a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+	  
+			</div>
+		  </section>
+
+		  <section id="team" class="team section-bg">
+			<div class="container" >
+	  
+			  <div class="row">
+				  
+				<div class="col-lg-3 col-md-6" >
+				  <div class="member">
+					<img src="{% static 'general/team/img/Mohammed.jpg' %}" class="img-fluid" alt=""/>
+					<div class="member-info">
+					  <div class="member-info-content">
+						<h4>Mohamed Lateef </h4>
+						<span>Participant</span>
+						<div class="social">
+							<a target="_blank" href="https://www.linkedin.com/in/mohammed-lateef-b5b7391a5"><i class="fa fa-linkedin"></i></a>	
+							<a target="_blank" href="https://github.com/lateef0407"><i class="fa fa-github"></i></a>
+							<a target="_blank" href="https://instagram.com/_lateefshaikh_?igshid=vkgp0kir7rdz"><i class="fa fa-instagram"></i></a>
+							<a target="_blank" href="https://twitter.com/lateeeeeeeeef?s=09"><i class="fa fa-twitter"></i></a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-3 col-md-6">
+				  <div class="member">
+					<img src="{% static 'general/team/img/arsh.jpg' %}" class="img-fluid" alt=""/>
+					<div class="member-info">
+					  <div class="member-info-content">
+						<h4>Arsh Ansari</h4>
+						<span>Participant</span>
+						<div class="social">
+							<a target="_blank" href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin"></i></a>	
+							<a target="_blank" href="https://github.com/Arsh4601"><i class="fa fa-github"></i></a>
+							<a target="_blank" href="#"><i class="fa fa-instagram"></i></a>
+							<a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-3 col-md-6" >
+				  <div class="member">
+					<img src="{% static 'general/team/img/rohit.jpg' %}" class="img-fluid" alt=""/>
+					<div class="member-info">
+					  <div class="member-info-content">
+						<h4>Rohit Verma</h4>
+						<span>Participant</span>
+						<div class="social">
+							<a target="_blank" href="https://www.linkedin.com/mwlite/in/a-rohit-varma-49818b186"><i class="fa fa-linkedin"></i></a>	
+							<a target="_blank" href="https://github.com/RohitVarma001"><i class="fa fa-github"></i></a>
+							<a target="_blank" href=""><i class="fa fa-instagram"></i></a>
+							<a target="_blank" href=""><i class="fa fa-twitter"></i></a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-3 col-md-6" >
+				  <div class="member">
+					<img src="{% static 'general/team/img/soundharya.jpeg' %}" class="img-fluid" alt=""/>
+					<div class="member-info">
+					  <div class="member-info-content">
+						<h4>Soundharya</h4>
+						<span>Participant</span>
+						<div class="social">
+							<a target="_blank" href="https://www.linkedin.com/in/soundharya-srinivasan-18365b1a5/"><i class="fa fa-linkedin"></i></a>	
+							<a target="_blank" href="https://github.com/SoundharyaDGRT"><i class="fa fa-github"></i></a>
+							<a target="_blank" href="https://www.instagram.com/soundharya_1510/"><i class="fa fa-instagram"></i></a>
+							<a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+	  
+			</div>
+		  </section>
+
+		  <section id="team" class="team section-bg">
+			<div class="container" >
+	  
+			  <div class="row">
+				  
+				<div class="col-lg-3 col-md-6" >
+				  <div class="member">
+					<img src="{% static 'general/team/img/sudhan.jpg' %}" class="img-fluid" alt=""/>
+					<div class="member-info">
+					  <div class="member-info-content">
+						<h4>Hari Hara Sudhan</h4>
+						<span>Participant</span>
+						<div class="social">
+							<a target="_blank" href="https://www.linkedin.com/in/hariharasuhdans520"><i class="fa fa-linkedin"></i></a>	
+							<a target="_blank" href="https://github.com/HariSuriya520"><i class="fa fa-github"></i></a>
+							<a target="_blank" href="https://www.instagram.com/_ironstrange520_/"><i class="fa fa-instagram"></i></a>
+							<a target="_blank" href="https://twitter.com/HariHar85051998"><i class="fa fa-twitter"></i></a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-3 col-md-6">
+				  <div class="member">
+					<img src="{% static 'general/team/img/debanshu.jpg' %}" class="img-fluid" alt=""/>
+					<div class="member-info">
+					  <div class="member-info-content">
+						<h4>Debanshu Mutt</h4>
+						<span>Participant</span>
+						<div class="social">
+							<a target="_blank" href="https://www.linkedin.com/in/debanshu-mutt-9045821a2"><i class="fa fa-linkedin"></i></a>	
+							<a target="_blank" href="https://github.com/debanshu08"><i class="fa fa-github"></i></a>
+							<a target="_blank" href="#"><i class="fa fa-instagram"></i></a>
+							<a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-3 col-md-6" >
+				  <div class="member">
+					<img src="{% static 'general/team/img/snehal.jpg' %}" class="img-fluid" alt=""/>
+					<div class="member-info">
+					  <div class="member-info-content">
+						<h4>Snehal Kulabkar </h4>
+						<span>Particiant</span>
+						<div class="social">
+						  <a target="_blank" href="https://www.linkedin.com/in/snehal-kulabkar-ab1329192"><i class="fa fa-twitter"></i></a>
+						  <a target="_blank" href="https://github.com/snehalkulabkar"><i class="fa fa-facebook"></i></a>
+						  <a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+						  <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+	  
+				<div class="col-lg-3 col-md-6" >
+				  <div class="member">
+					<img src="{% static 'general/team/img/avishkar.jpg' %}" class="img-fluid" alt=""/>
+					<div class="member-info">
+					  <div class="member-info-content">
+						<h4>Avishkar Gandhi</h4>
+						<span>Participant</span>
+						<div class="social">
+							<a target="_blank" href="https://www.linkedin.com/in/avishkar-gandhi/"><i class="fa fa-linkedin"></i></a>	
+							<a target="_blank" href="https://github.com/avishkar2001"><i class="fa fa-github"></i></a>
+							<a target="_blank" href="#"><i class="fa fa-instagram"></i></a>
+							<a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+	  
+			</div>
+		  </section>
+
+		 
+
+		  
+  
+		
+		<!-- Footer -->
+  <footer class="page-footer font-small blue-grey lighten-5">
+    <div class="container">
+      <div class="cont text-center text-md-left mt-3 pt-5">
+        <div class="row mt-3 dark-grey-text">
+          <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+            <h6 class="text-uppercase font-weight-bold text-light">Information</h6>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a class="dark-grey-text" href="about">About Us</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#contact">Contact Us</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="terms">Terms Of Use</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="faq">FAQs</a>
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold text-light">Job seekers</h6>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a class="dark-grey-text" href="recruiter">Job Search</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Career Advices</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Resume Builder</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Report a Problem</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold text-light">Employers</h6>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a class="dark-grey-text" href="#!">Job Posting</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Advertise With Us</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Access Resumes</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">FAQs</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase font-weight-bold text-light">Stay Connected</h6>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a class="fb-ic">
+                <i class="fa fa-facebook-official white-text mr-4 text-light"><span
+                    class="icon_name">Facebook</span></i>
+              </a>
+            </p>
+            <p>
+              <a class="tw-ic">
+                <i class="fa fa-twitter white-text mr-4 text-light"><span class="icon_name">Twitter</span></i>
+              </a>
+            </p>
+            <p>
+              <a class="li-ic">
+                <i class="fa fa-linkedin white-text mr-4 text-light"><span class="icon_name">Linkedin</span></i>
+              </a>
+            </p>
+            <p>
+              <a class="ins-ic">
+                <i class="fa fa-instagram white-text text-light"><span class="icon_name">Instagram </span></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center text-black-50 py-3 text-light">
+        <a class="dark-grey-text" href="#">@ Build With Let's Upgrade</a>
+      </div>
+    </div>
+  </footer>
+  <!-- End -->
+		<!--External JS File-->
+		<script src="{% static 'general/team/scripts/app.js'%}"></script>
+		<script src="{% static 'general/team/scripts/aos.js'%}"></script>
+		<script src="{% static 'general/team/scripts/contactUs.js'%}"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js "
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV "
+        crossorigin="anonymous "></script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+
+	
+	</body>
+</html>
