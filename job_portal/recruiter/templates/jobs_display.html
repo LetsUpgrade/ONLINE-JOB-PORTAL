@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ModelForm Tutorial</title>
+</head>
+<body>
+<h2>All User Details</h2>
+<table>
+    {% for item in jobs %}
+    <tr>
+        <td><b>Title:</b>{{ item.job_title }}</td>
+    </tr>
+    <tr>
+    <td colspan="2" class="divider"><hr/></td>
+</tr>
+    {% endfor %}
+</table>
+</body>
+</html>

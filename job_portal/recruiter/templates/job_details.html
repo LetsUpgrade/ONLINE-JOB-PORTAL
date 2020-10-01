@@ -1,0 +1,49 @@
+{% extends 'hire_base.html' %}
+{% block content %}
+<div class="container" style="padding:20px;">
+  <div class="row">
+    <div class="col-7">
+      <div class="card">
+        <h5 class="card-header">{{jobs.job_title}}</h5>
+        <div class="card-body">
+            <hr>
+            <div class="card-text">Location: {{jobs.location}} || No. Of Positions {{jobs.vacany}}</div>
+            <hr>
+          <h5 class="card-title">Description</h5>
+          <div class="card-text">{{ jobs.description|safe|urlize|linebreaks }}</div>
+          {% if tasks.description == '' %}
+            
+          {% endif %}
+
+         
+            
+
+
+        </div>
+      </div>
+    </div>
+    <div class="col-5">
+      <div class="card" >
+        <div class="card-header">
+                       
+            <a href="{% url 'job_edit' jobs.id %} "class="btn btn-primary text-white">Edit Job </a>
+        
+         
+       
+        </div>
+        <ul class="list-group list-group-flush">
+
+          <li class="list-group-item"> <strong> Created On : </strong>{{jobs.created_on}}</li>
+          <li class="list-group-item"> <strong> Label : </strong>{{jobs.job_type}}</li>
+          {% if tasks.completed %}
+          <li class="list-group-item"> <strong> Status : </strong>Closed</li>
+          {% else %}
+          <li class="list-group-item"> <strong> Status : </strong>Open</li>
+          {% endif %}
+
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+{% endblock content %}

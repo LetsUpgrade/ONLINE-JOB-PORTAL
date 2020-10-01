@@ -1,0 +1,55 @@
+{% extends 'hire_base.html'%}
+{% block content %}
+
+<div class="col-9">
+    <h3 class="display-3 text-monospace"> Jobs
+        <button type="button" class="btn btn-danger">
+            Open <span class="badge badge-light">{{open}}</span>
+        </button>
+        <button class="btn btn-success">
+            Closed <span class="badge badge-light">{{closed}}</span>
+        </button>
+    </h3>
+</div>
+
+<div class="container">
+    <div class="row">
+       
+        <div class="col-10">
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                    <th scope="col">Job Title </th>
+                    <th scope="col">Created On </th>
+                    <th scope="col">Location </th>
+                    <th scope="col">Job Type </th>
+                    <th scope="col">Status </th>
+        
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for job in jobs %}
+        
+                <tr>
+                    <td><a href="{% url 'job_details' job.id  %}" class="text-monospace"> {{ job.job_title }} </a> </td>
+                    <td>{{ job.created_on}}</td>   
+                    <td>{{ job.location}}</td>                     
+                    <td><a href="#" class="badge badge-primary"> {{ job.job_type}} </a> </td>
+                    
+                    <td> {% if job.status  %}
+                        <span class="badge badge-danger">Closed</span>
+                    {% else %}
+                        <span class="badge badge-success">Open</span>
+                    {% endif %}
+                </td>
+                </tr>
+                
+        
+                  {% endfor %}
+                
+                </tbody>
+              </table>
+             
+        </div>
+
+{% endblock content %}

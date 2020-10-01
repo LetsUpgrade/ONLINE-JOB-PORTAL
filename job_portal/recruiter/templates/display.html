@@ -1,0 +1,24 @@
+{% extends 'hire_base.html' %}
+{% block content %}
+
+   
+
+        {% for job in jobs %}
+            <div class="card">
+                <div class="card-header">
+                    <td><a href="{% url 'job_details' job.id  %}" class="text-monospace"> {{ job.job_title }} </a> </td>
+                  
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{job.company_name}}|{{job.location}}|{{job.job_type}}</h5>
+                    <p class="card-text">{{job.description|safe|urlize|linebreaks|slice:":500"}}...</p>
+                    <p class="card-text">No. of Post : {{job.vacany}}</p>
+                    <a href="#" class="btn btn-primary">Apply Here</a>
+                </div>
+                </div>
+                <br>
+        {% endfor %}
+        
+    </div>
+
+{% endblock content %}
